@@ -1,0 +1,10 @@
+; run-specific parameters for the Infinite Relational Model
+;
+--loops=20
+--nchains=1
+--temp=0.5
+--mcmcflag=1
+--outroot=output/smallbpcont
+--configfile=data/smallbpcont.config
+--graphname=data/smallbpcont.graph
+--initfile=

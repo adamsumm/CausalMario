@@ -1,0 +1,10 @@
+; run-specific parameters for the Infinite Relational Model
+;
+--loops=20
+--nchains=1
+--temp=0.5
+--mcmcflag=1
+--outroot=output/smallbpfreqmiss
+--configfile=data/smallbpfreqmiss.config
+--graphname=data/smallbpfreqmiss.graph
+--initfile=

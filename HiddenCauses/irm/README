@@ -1,0 +1,268 @@
+December 2005. Charles Kemp. (ckemp@mit.edu)
+
+Code for the Infinite Relational Model (IRM) described in:
+[1] Kemp, C., Tenenbaum, J. B., Griffiths, T. L., Yamada, T. & Ueda, N. (2006).
+Learning systems of concepts with an infinite relational model. AAAI 2006
+[2] Kemp, C., Griffiths, T. L. & Tenenbaum, J. B. (2004)  Discovering latent 
+    classes in relational data. AI Memo 2004-019
+
+------------------------------------------------------------------------------
+Purpose
+------------------------------------------------------------------------------
+
+Given data involving one or more domains (also called types), simultaneously
+cluster the objects in as many of these domains as desired. Includes a
+stochastic blockmodel and a co-clustering model as special cases: see [1]
+above.   
+
+The program can run a Metropolis-coupled MCMC simulation (MC^3) with
+split-merge updates, or a hill-climbing search (which may be the only realistic
+option for big datasets). 
+
+------------------------------------------------------------------------------
+Installation
+------------------------------------------------------------------------------
+
+To compile, type
+
+> make
+
+which creates the executable irm 
+
+------------------------------------------------------------------------------
+Test Cases
+------------------------------------------------------------------------------
+Type 
+
+> ./runtest
+
+to check that the program produces the right output on several small test cases
+
+
+------------------------------------------------------------------------------
+Usage: Binary data
+------------------------------------------------------------------------------
+
+(a) Create a config file. We explain the format using data/uml.config as an
+     example. This config file is for clustering the UMLS ontology where we
+     treat the data as a single three-place relation: see [1].
+
+umlnoselflinks   #  a one-word label, which is currently unused
+2 1		 #  dataset involves 2 domains and 1 relation
+49 49 1 1	 #  the zeroth domain has 49 items, and up to 49 clusters. We
+		 #	start the search with 1 cluster. The final 1 says that
+		 #	we want to cluster the domain.
+135 135 1 1      #  the first domain has 135 items, up to 135 clusters,
+		 #      starts out with 1 cluster, and we want to cluster it.
+3 1 1 0		 #  the zeroth relation (R0) has three dimensions: D1 x D1 x D0
+
+After the first two lines, the config file has one line for each domain, then
+one line for each relation. 
+
+(b) Create a relation file specifying the edges in each relation (one per
+line).  The file for the UML example (data/uml.graph) starts like this:
+
+0    19    20     0  1  # relation 0 has a link involving objects 19 and 20
+			# (from D1) and object 0 (from D0). The value of the
+			# link is 1
+
+Links can have only two values (1 or 0).  If there are no unobserved links,
+only the 1-edges need to be included in the relation file, and the program can
+take advantage of relations that are sparse.  if some links are unobserved, all
+the observed links (1-links and 0-links) need to be included, and the program
+will run slower. If one or more 0-link appears for a relation, the program
+infers that it is not fully observed. 
+
+The current version assumes that no link can involve the same item more than
+once. This is a limitation of the implementation: the generative model in [1]
+doesn't make this assumption.
+
+(c) Create a parameter file. The included file for the UMLS example (uml.opt)
+looks like this:
+
+; run-specific parameters for the Infinite Relational Model
+;
+--loops=200			# length of search
+--nchains=1			# run one chain
+--temp=0.5			# temperature parameter for MC^3
+--mcmcflag=0			# run hill-climbing, not MCMC
+--outroot=output/uml		# location for output 
+--configfile=data/uml.config	# location of config file
+--graphname=data/uml.graph	# location of relation file
+--initfile=			# can specify initial class assignments if
+				#   desired. 
+--hypupdates=5			# try updating hyperparameters 5 times per
+				#    iteration
+--betamagupdate=1		# update betamag	(see below)
+--betapropupdate=0		# don't update betaprop (see below)
+
+(d) run the program by typing
+
+> irm @uml.opt
+
+(e) The program creates a status file, and an assignment file for each domain. 
+
+A typical line from uml_status looks like this:
+
+
+11: -13079.716 -118.044 -337.487   23   14 -13535.246   1.000   0.020   1.000   1.000 
+
+12: -13026.198 -96.439 -332.950   23   14 -13455.587   1.000   0.020   7.450   2.740 
+
+
+where 12 is the iteration number, 23 and 14 are the number of classes for D0
+    and D1, and -13455.587 is the overall score at this stage of the search.
+
+(Of the remaining numbers, 
+
+13026.198   is the probability of R0 given the current partitions of D0
+		and D1
+-96.439	    is the log probability of the current partition of D0
+-332.950    is the log probability of the current partition of D1
+1	    is the current value of betaprop for R0 (hyperparameters are
+		described below)
+0.02	`   is the current value of betamag for R0
+7.450	    is the current value of alpha for D0
+2.740	    is the current value of alpha for D1
+)
+
+
+The assignment files (one per domain) have the same number of lines as the
+status file. Each line has a class label for each item in the domain.  The best
+assignments are in the line that uml_status gives the best overall score.
+data/checkuml.m is a Matlab script that pulls out the best assignments, and
+plots an adjacency matrix for one of the verbs in the UMLS dataset.
+
+------------------------------------------------------------------------------
+Setting the initial configuration
+------------------------------------------------------------------------------
+
+Instead of starting with a single class for each domain, you can create a file
+with the initial class assignments for each domain. This single file must have
+the domains ordered according to their indices given in the configuration file.
+Use the "initfile" option in the .opt file to tell the program where the
+initial class assignments can be found.
+
+------------------------------------------------------------------------------
+Frequency and Continuous data
+------------------------------------------------------------------------------
+A graph can contain binary data, frequency data or continuous data. The program
+figures out the data type for each graph by looking at the edge weights. 
+
+(i) Frequency Data:
+Not extensively tested, but it seems to work on small to medium examples.  As
+for the binary case, only the non-zero counts need to be supplied if there are
+no unobserved links.
+
+(ii) Continuous Data:
+The data in each relation should be linearly transformed so that the mean is
+zero and the variance is one. The default values of the hyperparameters were
+chosen based on these assumptions.
+
+Sample scripts: 
+  data/makecont1.m:  make a graph with continuous edge weights
+  data/checkcont1.m: analyse the results of running irm @cont.opt. Even though
+	the model should find the right classes, checkcont1.m and makecont1.m 
+	make different pictures because they order the classes differently
+	(note that the order doesn't matter).
+	
+------------------------------------------------------------------------------
+Other sample scripts
+------------------------------------------------------------------------------
+Several other examples are included. All involve 2-place relations :
+
+> irm @ring.opt			# a 4-class ring structure
+> irm @smallbp.opt		# a tiny bipartite graph
+
+------------------------------------------------------------------------------
+Hyperparameters 
+------------------------------------------------------------------------------
+
+The hyperparameters can be adjusted by setting alpha, betaprop, betamag, m, v,
+a and b in the parameter file.  Changing these hyperparameters will affect the
+number of classes found by the model. 
+
+alpha (default 1) is the concentration parameter for the Chinese Restaurant
+Process. Increasing alpha encourages the model to find more classes.
+
+(i)   Binary Data.
+
+Entries in each eta matrix (see [1]) are drawn from a Beta(b1,b2) prior. The
+parameters betaprop (default 1) and betamag (default 0.2) represent the ratio
+and the sum of b1 and b2. We've achieved good results using a symmetric
+betaprior (betaprop = 1) and low values of betamag, which mean that the model's
+tolerance of noise is low: it does its best to sort the data matrices into
+clean block structures. 
+
+By default we initialize with the above values and use MH proposals to change
+betaprop and betamag for each relation. Following p 128 of "Bayesian Data
+Analysis" by Gelman et al, we use p(b1, b2) \propto (b1+b2)^(-2.5). 
+
+(ii)  Frequency Data
+
+Consider a two dimensional matrix D where there is a count $D_{ij}$ for each
+pair of entities $(i, j)$.  Let $\abs{a}$ be the number of entities in cluster
+$a$. Let $C$ be a matrix of between-cluster counts, where $C_{ab}$ is the total
+number of counts observed between entities in cluster $a$ and entities in
+cluster $b$. We work with a model where $P(D|S) = P(D|C)P(C|S)$, and $C$ is
+generated from a Dirichlet-multinomial model:
+\begin{alignat*}{2}
+\theta    &\,|\, S, \beta  &\ \sim \ & \text{Dirichlet}(\alpha) \\ 
+C         &\,|\, \theta, n_{\text{obs}} &\ \sim \ & \text{Multinomial}(\theta) 
+\end{alignat*}
+where $\alpha_{ab}=\beta\abs{a}\abs{b}$ and $n_{obs}$ is the total number of observations. 
+
+The hyperparameter \beta is set to the b1 used for the binary model, and can be
+changed by adjusting betaprop and betamag.
+
+(iii) Continuous Data.
+
+Data in each subblock are drawn from a Gaussian with mean \mu and variance
+\sigma^2. (\mu, \sigma^2) are drawn from a Normal-Inverse-Gamma distribution
+with four hyperparameters: m, v, a and b
+    - \sigma^2 is drawn from IG(a, b) where IG is an inverse gamma distribution.
+    - \mu is drawn from a Gaussian: N(m, v*\sigma^2)
+
+By default we set m = 0, v = 5, a = 2 and b = 0.2. Note that the expected value
+of \sigma^2 is b/(a-1). Roughly speaking, making b/(a-1) low encourages the
+model to find clean blocks, and setting v relatively high means that the mean
+value of each block can be relatively far from zero.
+
+------------------------------------------------------------------------------
+Reproducing the simulations in [1]
+------------------------------------------------------------------------------
+
+For the Osherson data, the UMLS data, the kinship data, and the international
+relations data we used greedy search rather than MCMC, and searched for the
+best values of betamag and alpha (betaprop was fixed at 1). The configuration
+file included (uml.opt) specifies these choices.
+
+For the synthetic data we used mcmcflag=1, but otherwise set up the simulations
+similarly.
+
+------------------------------------------------------------------------------
+Known problems and inefficiencies
+------------------------------------------------------------------------------
+No self-links allowed, as mentioned above.
+
+We store the edges in each relation multiple times (once for each chain). This
+will be a problem when working with very large graphs that can barely fit into
+memory once. We've run this code for moderately large co-clustering problems,
+though. 
+
+It is simple to deal with relational systems where some relations contain
+continuous data and others contain binary data. The current version doesn't
+allow this.
+
+------------------------------------------------------------------------------
+Acknowledgments
+------------------------------------------------------------------------------
+
+The UMLS data are taken from http://www.nlm.nih.gov/research/umls/. See also
+references in [1].
+
+cokus.c was written by Shawn Cokus based on an earlier version by Matsumoto
+and Nishimura. 
+
+opt.c was written by James Theiler and is available under the GPL.
+

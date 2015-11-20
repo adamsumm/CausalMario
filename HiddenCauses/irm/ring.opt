@@ -1,0 +1,13 @@
+; run-specific parameters for the Infinite Relational Model
+;
+--loops=40
+--nchains=3
+--temp=0.5
+--mcmcflag=1
+--outroot=output/ring
+--configfile=data/ring.config
+--graphname=data/ring.graph
+--initfile=
+--hypupdates=5
+--alphaupdate=1
+

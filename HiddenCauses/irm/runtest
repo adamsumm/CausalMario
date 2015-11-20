@@ -1,0 +1,26 @@
+#!/bin/athena/tcsh
+
+irm @ring.opt >! dump1
+irm @smallbp.opt >! dump2
+irm @smallbpmiss.opt >! dump3
+irm @smallbpcont.opt >! dump4
+irm @smallbpfreq.opt >! dump5
+irm @smallbpfreqmiss.opt >! dump6
+#irm @uml.opt >! dump4
+
+echo "Check ring.out..."
+diff dump1 "test/ring.out"
+echo "Check smallbp.out..."
+diff dump2 "test/smallbp.out"
+echo "Check smallbpmiss.out..."
+diff dump3 "test/smallbpmiss.out"
+echo "Check smallbpcont.out..."
+diff dump4 "test/smallbpcont.out"
+echo "Check smallbpfreq.out..."
+diff dump5 "test/smallbpfreq.out"
+echo "Check smallbpfreqmiss.out..."
+diff dump6 "test/smallbpfreqmiss.out"
+
+#diff dump4 "test/uml.out"
+
+rm -rf dump*

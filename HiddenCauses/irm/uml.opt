@@ -1,0 +1,14 @@
+; run-specific parameters for the Infinite Relational Model
+;
+--loops=20
+--nchains=1
+--mcmcflag=0
+--outroot=output/uml
+--configfile=data/uml.config
+--graphname=data/uml.graph
+--initfile=
+--hypupdates=5
+--betamagupdate=1
+--betapropupdate=0
+--alphaupdate=1
+

@@ -1,0 +1,10 @@
+; run-specific parameters for the Infinite Relational Model
+;
+--loops=20
+--nchains=1
+--temp=0.5
+--mcmcflag=0
+--outroot=output/cont1
+--configfile=data/cont1.config
+--graphname=data/cont1.graph
+--initfile=
