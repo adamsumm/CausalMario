@@ -30,6 +30,8 @@ void item_setclass(item itm, int absc) {
 }
 
 int item_getclass(item itm) {
+   void* ptr = itm;
+   
   return(itm->absclass);
 }
 
@@ -140,11 +142,11 @@ void item_print(item itm, int rel, int dim, int ndim) {
   nedges = item_getnedges(itm, rel, dim);
   for (i = 0; i < nedges; i++) {
     item_getparticipants(itm, rel, dim, ndim, i, participants);      
-    fprintf(stdout, "edge %d: ", i);
+    fprintf(stderr, "edge %d: ", i);
     for (j = 0; j < ndim; j++) {
-      fprintf(stdout, "%d ", participants[j]);
+      fprintf(stderr, "%d ", participants[j]);
     }
-    fprintf(stdout, "\n");
+    fprintf(stderr, "\n");
   }
   free(participants);
 }

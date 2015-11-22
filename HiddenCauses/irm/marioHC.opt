@@ -1,0 +1,13 @@
+; run-specific parameters for the Infinite Relational Model
+;
+--loops=80
+--nchains=8
+--temp=0.5
+--mcmcflag=0
+--outroot=marioModHillClimb
+--configfile=marioMod.config
+--graphname=marioMod.graph
+--initfile=
+--hypupdates=5
+--alphaupdate=1
+

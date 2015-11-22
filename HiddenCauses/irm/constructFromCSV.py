@@ -33,8 +33,8 @@ def add2Counts(rel,num):
         counts[rel] = num
     else:
         counts[rel] += num
-
-        
+noEffects = set()
+effects= set()
 for dat in data:
     oA = dat[0]
     oB = dat[1]
@@ -46,21 +46,68 @@ for dat in data:
 
     rel = (t,oA,oB,A2B,s,ta,dv)
     #If we observe an interaction and nothing happens, we want to set all possible effects to 0
+
     if 'None' in t:
-        for t in typeSets['EffectType']:
-            if 'None' not in t:
-                for s in typeSets['ObjectA']:
-                    for ta in typeSets['ObjectB']:
-                        for dv in typeSets['VelChange']:
-                            rel = (t,oA,oB,A2B,s,ta,dv)
-                            add2Counts(rel,0)
+        noEffects.add((oA,oB,A2B))
     else:
+        #noEffects.add((oA,oB,A2B))
+        effects.add((t,s,ta,dv))
         add2Counts(rel,1)
+
+for c in noEffects:
+    for e in effects:
+        if d2ind['ObjectA'][c[0]] != d2ind['ObjectA'][e[2]] and  d2ind['ObjectA'][c[1]] != d2ind['ObjectA'][e[2]] and d2ind['ObjectA'][c[0]] != d2ind['ObjectA'][e[1]] and  d2ind['ObjectA'][c[1]] != d2ind['ObjectA'][e[1]]:
+            rel = (e[0],c[0],c[1],c[2],e[1],e[2],e[3])
+            add2Counts(rel,0)
+        
+print sys.argv[1]
+print '4 5'
+print len(d2ind['ObjectA']),len(d2ind['ObjectA']),1,1
+print len(d2ind['A2BDir']),len(d2ind['A2BDir']),len(d2ind['A2BDir']),0
+print len(d2ind['VelChange']),len(d2ind['VelChange']),len(d2ind['VelChange']),0
+print 3,3,3,0 #A, B, other
+
+#VelChange
+print 4,0,0,1,2
+#Add 
+print 4,0,0,1,0
+#Change From
+print 4,0,0,1,3
+#Delete 
+print 4,0,0,1,3
+#Change To
+print 4,0,0,1,0
+
+print '\n\n'
 for relation in counts:
     relationType = relation[0]
     count = counts[relation]
-    
-    relation = list(relation)[1:]
-    print d2ind['EffectType'][relationType],    d2ind['ObjectA'][relation[0]], d2ind['ObjectA'][relation[1]],    d2ind['A2BDir'][relation[2]], d2ind['ObjectA'][relation[3]],    d2ind['ObjectA'][relation[4]], d2ind['VelChange'][relation[5]], count
+    if  d2ind['ObjectA'][relation[1]] !=  d2ind['ObjectA'][relation[2]]:
+        relation = list(relation)[1:]
+        if relationType == 'VelChange':
+            print d2ind['EffectType'][relationType]-1,    d2ind['ObjectA'][relation[0]], d2ind['ObjectA'][relation[1]],    d2ind['A2BDir'][relation[2]], d2ind['VelChange'][relation[5]], count
+        if relationType == 'Add':
+            if d2ind['ObjectA'][relation[0]] !=  d2ind['ObjectA'][relation[3]] and  d2ind['ObjectA'][relation[1]]  !=  d2ind['ObjectA'][relation[3]]:
+                print d2ind['EffectType'][relationType]-1,    d2ind['ObjectA'][relation[0]], d2ind['ObjectA'][relation[1]],    d2ind['A2BDir'][relation[2]], d2ind['ObjectA'][relation[3]],  count
+        if relationType == 'Delete':
+            a = d2ind['ObjectA'][relation[3]] == d2ind['ObjectA'][relation[0]]
+            b = d2ind['ObjectA'][relation[3]] == d2ind['ObjectA'][relation[1]]
+            ind = 0
+            if a:
+                ind = 1
+            if b:
+                ind = 2
+            print d2ind['EffectType'][relationType]-1,    d2ind['ObjectA'][relation[0]], d2ind['ObjectA'][relation[1]],    d2ind['A2BDir'][relation[2]], ind,  count
+        if relationType == 'Change':
+            a = d2ind['ObjectA'][relation[3]] == d2ind['ObjectA'][relation[0]]
+            b = d2ind['ObjectA'][relation[3]] == d2ind['ObjectA'][relation[1]]
+            ind = 0
+            if a:
+                ind = 1
+            if b:
+                ind = 2
+            print d2ind['EffectType'][relationType]-1,    d2ind['ObjectA'][relation[0]], d2ind['ObjectA'][relation[1]],    d2ind['A2BDir'][relation[2]], ind,   count
+            print 4, d2ind['ObjectA'][relation[0]], d2ind['ObjectA'][relation[1]],    d2ind['A2BDir'][relation[2]],   d2ind['ObjectA'][relation[4]], count
 
-pickle.dump(d2ind,open('{}.pkl'.format(sys.argv[0]),'w'))
+
+pickle.dump(d2ind,open('{}.pkl'.format(sys.argv[1]),'w'))

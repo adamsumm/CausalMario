@@ -77,6 +77,7 @@ chaincolln chaincolln_readdata(void) {
   rng = gsl_rng_alloc(T);
 #endif 
 
+  fprintf(stdout,"A\n");
   nchains = ps.nchains+1;
   nig[0] = ps.m; nig[1] = ps.v; nig[2] = ps.a; nig[3] = ps.b; 
   
@@ -101,6 +102,7 @@ chaincolln chaincolln_readdata(void) {
       ps.maxclass= maxclass;
     }
   }
+  fprintf(stdout,"B\n");
   ps.maxdim = 0;
   for (r = 0; r < nreln; r++) {
     fscanf(fileptr, "%d", &ndim);
@@ -114,10 +116,12 @@ chaincolln chaincolln_readdata(void) {
   }
   fclose(fileptr);
 
+  fprintf(stdout,"C\n");
   domlabels=	 (int *) my_malloc(ps.maxdim*sizeof(int));
   participants=  (int *) my_malloc(ps.maxdim*sizeof(int));
   initclasses =  (int *) my_malloc(ps.maxitem*sizeof(int));
 
+  fprintf(stdout,"D \n");
   /* initial read of ps.graphname to get ps.maxobjtuples */
   edgecounts =  (int ***) my_malloc(ps.maxrel*sizeof(int **));
   for (i = 0; i < ps.maxrel; i++) {
@@ -131,6 +135,7 @@ chaincolln chaincolln_readdata(void) {
   }
   ps.maxobjtuples = 0;
 
+  fprintf(stdout,"D2 \n");
   fileptr = fopen(ps.graphname,"r");
   if (fileptr == NULL) {
     fprintf(stderr, "couldn't read graph\n"); exit(1); 
@@ -144,9 +149,12 @@ chaincolln chaincolln_readdata(void) {
     fscanf(fileptr, "%lf", &val); 
 
     for (dim = 0; dim < ndim; dim++) {
+      fprintf(stdout,"D2 %d %d %d \n",r,dim,participants[dim]);
         edgecounts[r][dim][participants[dim]]++;
+      fprintf(stdout,"D2 %d %d %d \n",r,dim,participants[dim]);
     }
   }
+  fprintf(stdout,"E\n");
   fclose(fileptr);
   for (i = 0; i < ps.maxrel; i++) {
     for (j = 0; j < ps.maxdim; j++) {
@@ -159,6 +167,7 @@ chaincolln chaincolln_readdata(void) {
     }
   }
 
+  fprintf(stdout,"F\n");
   free(relsizes); 
   for (i = 0; i < ps.maxrel; i++) {
     for (j = 0; j < ps.maxdim; j++) {
@@ -169,6 +178,7 @@ chaincolln chaincolln_readdata(void) {
   free(edgecounts);
 
 
+  fprintf(stdout,"G\n");
   /* second read of ps.configfile where we set up datastructures */
 
   fileptr = fopen(ps.configfile,"r");
@@ -181,12 +191,14 @@ chaincolln chaincolln_readdata(void) {
     initzsfile = NULL;
   }
 
+  fprintf(stdout,"H\n");
   fscanf(fileptr, "%s", prefix);
   fscanf(fileptr, "%d %d", &ndom, &nreln);
 
   cc = chaincolln_create(nchains, ndom, nreln, prefix);
   c0 = chaincolln_getchain(cc, 0);
 
+  fprintf(stdout,"I\n");
   /* read domains */
   /* input file: nitem maxclass initclass clusterflag*/
   for (d = 0; d < ndom; d++) {
@@ -199,6 +211,7 @@ chaincolln chaincolln_readdata(void) {
         fscanf(initzsfile, "%d", &initclasses[zind]);
       }
     }
+  fprintf(stdout,"J\n");
 
     /* add domains and items to chains */
     for (cind = 0; cind < nchains; cind++) {
@@ -237,6 +250,7 @@ chaincolln chaincolln_readdata(void) {
   gsl_rng_free(rng);
 #endif
   
+  fprintf(stdout,"K\n");
   /* read relations*/
   /* input file: ndim d0 ... dn */
 
@@ -255,6 +269,7 @@ chaincolln chaincolln_readdata(void) {
     fclose(initzsfile);    
   }
 
+  fprintf(stdout,"L\n");
   fclose(fileptr);
   /* second read of ps.graphname: store edges*/
   fileptr = fopen(ps.graphname,"r");
@@ -264,6 +279,7 @@ chaincolln chaincolln_readdata(void) {
     doms = relation_getdoms( chain_getrelation(c0, r) ); 
     for (dim = 0; dim < ndim; dim++) {
       fscanf(fileptr, "%d", &participant);
+      fprintf(stdout,"M %d %d\n",dim,participant);
       participants[dim] = participant;
       domlabels[dim] = domain_getlabel(doms[dim]); 
     }
@@ -278,23 +294,30 @@ chaincolln chaincolln_readdata(void) {
     } 
 
     fscanf(fileptr, "%lf", &val);
+      fprintf(stderr,"%d\n",nchains);
     for (cind = 0; cind < nchains; cind++) {
       c = chaincolln_getchain(cc, cind);
       chain_addedge(c, r, val, participants); 
+      
       rn = chain_getrelation(c, r);
+      
       if (doubleeq(val, 0)) {
 	relation_setmissing(rn, 1);	
       }
+      
       if (val > 1.5 && relation_getdtype(rn) != CONT) {
 	relation_setdtype(rn, FREQ);	
       }
+      
       if (!doubleeq(val, (int) val)) {
 	relation_setdtype(rn, CONT);	
 	relation_setmissing(rn, 1); /* XXX: no sparse continuous matrices */	
       }	
+      
     }
   }
 
+  fprintf(stderr,"N\n");
   fclose(fileptr);
 
   for (cind = 0; cind < nchains; cind++) {
@@ -304,6 +327,7 @@ chaincolln chaincolln_readdata(void) {
     }
   }
 
+  fprintf(stderr,"O\n");
   free(domlabels); free(participants); free(initclasses);
 
   return cc;
@@ -328,7 +352,7 @@ int chaincolln_getitercount(chaincolln cc) {
 void chaincolln_print(chaincolln cc) {
   chaincolln_printassignments(cc);
   chaincolln_printstatus(cc, NULL);
-  chaincolln_printstatus(cc, stdout);
+  chaincolln_printstatus(cc, stderr);
 }
 
 /* run hillclimbing with random restarts */
@@ -350,10 +374,10 @@ void chaincolln_climb(chaincolln cc, int maxloops) {
       /* maximizing scan: move each object to the best class for it */
       changeflag = chain_climbscan(chn);
     }
-    /*chain_print(chn); fprintf(stdout, "splitting\n");*/
+    /*chain_print(chn); fprintf(stderr, "splitting\n");*/
     changeflag = changeflag + chain_climbsplitfast(chn, schn);
 
-    /*chain_print(chn); fprintf(stdout, "merging\n");*/
+    /*chain_print(chn); fprintf(stderr, "merging\n");*/
     changeflag = changeflag + chain_climbmergefast(chn, schn);
 
     for (j = 0; j < ps.hypupdates; j++) {
@@ -376,7 +400,7 @@ void chaincolln_climb(chaincolln cc, int maxloops) {
       nrepeats = 0;
     }
     oldscore = newscore;
-    chaincolln_printstatus(cc, stdout);
+    chaincolln_printstatus(cc, stderr);
   }
 }
 
@@ -385,6 +409,7 @@ void chaincolln_mcmc(chaincolln cc, int maxloops) {
   int i, j;
   chaincolln_print(cc);
   for (i = 0; i < maxloops; i++) {
+    fprintf(stderr,"loop %d",i);
     /* gibbs scans and split merge updates */
     chaincolln_sample(cc, 1);
     /* MC^3: try swaps between chains at different temperatures */
@@ -453,7 +478,7 @@ void chaincolln_tryswaps(chaincolln cc) {
       rn = myrand();
       if (rn < aswap) {
         chaincolln_swapchains(cc, sw1, sw2);
-        fprintf(stdout, "****CS: %f\n", aswap);
+        fprintf(stderr, "****CS: %f\n", aswap);
       }
     }
   }

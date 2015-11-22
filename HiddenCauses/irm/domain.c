@@ -55,7 +55,9 @@ domain domain_create(int nitem, int nclassmax, int clusterflag, double alpha,
     dmn->classes[i] = itemclass_create(nitem);
   }
   dmn->items= (item *) my_malloc(nitem*sizeof(item));
+    fprintf(stderr,"%p TOTAL %d\n",dmn,nitem);
   for (i = 0; i < nitem; i++) {
+    fprintf(stderr,"%p Creating %d\n",dmn,i);
     dmn->items[i] = item_create();
   }
   dmn->label = label;
@@ -154,6 +156,8 @@ void domain_removeitemfromclass(domain dmn, int itemind) {
 }
 
 int domain_getitemabsclass(domain dmn, int itemind) {
+  
+   dmn->items[itemind];
   return( item_getclass(dmn->items[itemind]));
 }
 
@@ -261,7 +265,7 @@ void domain_printclasses(domain dmn) {
   int i, nclasses, abslabel;
   nclasses = domain_getnclasses(dmn);
   for (i = 0; i < nclasses; i++) {
-    fprintf(stdout, "Class %d ", i);
+    fprintf(stderr, "Class %d ", i);
     abslabel = domain_absclasslabel(dmn, i);
     itemclass_print(dmn->classes[abslabel]);  
   }

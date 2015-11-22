@@ -1,0 +1,13 @@
+; run-specific parameters for the Infinite Relational Model
+;
+--loops=40
+--nchains=2
+--temp=0.5
+--mcmcflag=1
+--outroot=marioTotal
+--configfile=marioTotal.config
+--graphname=marioTotal.graph
+--initfile=
+--hypupdates=5
+--alphaupdate=1
+

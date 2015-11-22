@@ -2,7 +2,8 @@
 #include "config.h"
 #include "string.h"
 #include "opt.h"
-
+#include <stdio.h>
+#include <stdlib.h>
 /*****************************************************************************
 The global variable ps specifies parameters for the current run.
 *****************************************************************************/
@@ -82,7 +83,7 @@ void parameters_getps(int *argcp, char ***argvp) {
   } else {
     ps.outsideinit = 1;
   }
-
+  fprintf(stdout,"Parameters gotten\n");
   return;
 }
 

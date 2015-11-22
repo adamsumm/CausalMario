@@ -226,9 +226,15 @@ int chain_itemclasses(domain *doms, int *participants, int *itemclasses,
   int i, ppresentflag;
   ppresentflag = 1;
   for (i = 0; i < ndim; i++) {
+   itemclasses[i];
+   doms[i];
+   
+   participants[i];
+   
      itemclasses[i] = domain_getitemabsclass(doms[i], participants[i]); 
      if (itemclasses[i] < 0) {ppresentflag = 0;}
   }
+   
   return ppresentflag;
 }
 
@@ -240,16 +246,20 @@ void chain_addedge(chain chn, int relind, double val, int *participants)
    domain *memberdomains;
    datael del1;
 
+   
    del1 = datael_create();
    datael_setcount(del1, 1);
    datael_setval(del1, 0, val); datael_setval(del1, 1, pow(val, 2));
+   
 
    absclasses =  (int *) my_malloc(ps.maxdim*sizeof(int));
    memberdomains = relation_getdoms(chn->relations[relind]);
    ndim = relation_getdim(chn->relations[relind]);
 
+   
    ppresentflag = chain_itemclasses(memberdomains, participants, absclasses, 
 	ndim) ;
+   
    if ( ppresentflag != 0 ) {
      /* add edges to items in all member domains */
      for (i = 0; i < ndim; i++) {
@@ -260,6 +270,7 @@ void chain_addedge(chain chn, int relind, double val, int *participants)
      relation_addedges(chn->relations[relind], del1, absclasses);
    }
 
+   
    free(absclasses); free(del1);
 }
 
@@ -1337,11 +1348,11 @@ void chain_printbriefstatus(chain chn, FILE *fileptr) {
 void chain_print(chain chn) {
   int i;
   for (i = 0; i < chn->ndomains; i++) {
-    fprintf(stdout, "Domain %d\n", i);
+    fprintf(stderr, "Domain %d\n", i);
     domain_printclasses(chn->domains[i]);
   }
   for (i = 0; i < chn->nrelations ; i++) {
-    fprintf(stdout, "Relation %d\n", i);
+    fprintf(stderr, "Relation %d\n", i);
     relation_printcounts(chn->relations[i]);
   }
 }
@@ -1363,7 +1374,7 @@ void chain_printitemclasscounts(chain chn, int domind) {
   ninstance = domain_getninstance(d);
   for (i = 0; i < ninstance; i++) {
     domain_getinstance(d, i, &relind, &dimind);
-    fprintf(stdout, "domain %d: relation %d: dimension %d\n", domind, relind,
+    fprintf(stderr, "domain %d: relation %d: dimension %d\n", domind, relind,
 		dimind); 
     icmda = chn->itemclasscounts[relind][dimind];
     r = chain_getrelation(chn, relind);
@@ -1380,12 +1391,12 @@ void chain_printitemclasscounts(chain chn, int domind) {
     for (ccind = 0; ccind < celltot; ccind++) {
       for (j = 0; j < rdim; j++) { /* create absolute indices */
         mdaabsindex[j] = domain_absclasslabel(rdoms[j], mdarelindex[j]);
-	fprintf(stdout, "%d ", mdarelindex[j]);
+	fprintf(stderr, "%d ", mdarelindex[j]);
       }
       mdaabsindex[dimind] = 0;
       cntd = multidarray_get(icmda, mdaabsindex);
       cnt = datael_getcount(cntd);
-      fprintf(stdout, ": %0.f\n", cnt);
+      fprintf(stderr, ": %0.f\n", cnt);
       multidarray_incrementindex(rdim, mdarelindex, domclasses);
     }
   }
