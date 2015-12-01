@@ -1,0 +1,13 @@
+; run-specific parameters for the Infinite Relational Model
+;
+--loops=200
+--nchains=8
+--temp=2
+--mcmcflag=1
+--outroot=T
+--configfile=T.config
+--graphname=T.graph
+--initfile=
+--hypupdates=5
+--alphaupdate=1
+--alpha=8

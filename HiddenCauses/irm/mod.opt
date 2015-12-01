@@ -1,0 +1,12 @@
+; run-specific parameters for the Infinite Relational Model
+;
+--loops=50
+--nchains=4
+--temp=1
+--mcmcflag=1
+--outroot=mod
+--configfile=mod.config
+--graphname=mod.graph
+--initfile=
+--hypupdates=5
+--alphaupdate=1

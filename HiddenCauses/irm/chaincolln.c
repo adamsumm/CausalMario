@@ -141,7 +141,9 @@ chaincolln chaincolln_readdata(void) {
     fprintf(stderr, "couldn't read graph\n"); exit(1); 
   }
   while( fscanf( fileptr, " %d", &r)!=EOF ) {
+    fprintf(stdout,"%s %d %d\n",__FILE__,__LINE__,r);
     ndim = relsizes[r];
+    fprintf(stdout,"%s %d %d\n",__FILE__,__LINE__,ndim);
     for (dim = 0; dim < ndim; dim++) {
       fscanf(fileptr, "%d", &participant);
       participants[dim] = participant;

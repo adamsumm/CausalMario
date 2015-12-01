@@ -15,8 +15,8 @@ opposite = {
 	"L":"R",
 	"R":"L"
 }
-enemyOdds = 1.0/3200.0
-bushOdds = 1.0/3200.0
+enemyOdds = 0#1.0/3200.0
+bushOdds = 0#1.0/3200.0
 with open(sys.argv[1],'r') as openfile:
 	print "ObjectA,ObjectB,A2BDir,EffectType,Source,Target,VelChange"
 	causes = []
@@ -52,7 +52,7 @@ with open(sys.argv[1],'r') as openfile:
 			cmatch = cevent.search(line)
 			vmatch = vevent.search(line)
 			if amatch:
-				effects.append(["append",amatch.group(1),"None","None"])
+				effects.append(["Add",amatch.group(1),"None","None"])
 			if vmatch:
 				effects.append(["VelChange",vmatch.group(1),"None",vmatch.group(2)])
 			if smatch:

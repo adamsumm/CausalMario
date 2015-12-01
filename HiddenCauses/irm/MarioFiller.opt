@@ -1,0 +1,12 @@
+; run-specific parameters for the Infinite Relational Model
+;
+--loops=50
+--nchains=1
+--temp=0.5
+--mcmcflag=1
+--outroot=MarioFiller
+--configfile=MarioFiller.config
+--graphname=MarioFiller.graph
+--initfile=
+--hypupdates=5
+--alphaupdate=1

@@ -1,0 +1,17 @@
+
+darkacloo@darkacloo-G751JY:~/CausalMario/HiddenCauses/irm$ python convertCat.py ../runs/t.csv.pkl modWM_A
+-92072.799 8
+['12', '3', '6', '1', '10', '8', '3', '5', '5', '3', '3', '12', '6', '7', '1', '6', '3', '4', '11', '6', '9', '11', '8', '6', '6', '9', '0', '6', '11', '11', '12', '6', '11', '12', '12', '3', '1', '2', '2', '3', '8', '9', '10', '2', '12', '1', '2']
+['3', '4', 'None', 'HILL_TOP', 'ROCK']
+['Spiky', 'COIN']
+['HILL_TOP_RIGHT', 'HILL_TOP_RIGHT_IN', 'HILL_FILL', 'HILL_LEFT', 'HILL_RIGHT', 'HILL_TOP_LEFT']
+['BulletBill', 'Mushroom', 'RedKoopa', 'GreenKoopa']
+['Goomba']
+['Fireball', 'SPENT', 'TUBE_TOP_RIGHT', 'null', '1', 'QBLOCK', 'FireFlower']
+['2', 'LEFT_GRASS_EDGE', 'Bush', 'HILL_TOP_LEFT_IN']
+['FireMario', 'BigMario']
+['Mario']
+['Shell']
+['RIGHT_GRASS_EDGE', 'BLOCK', '0', 'TUBE_TOP_LEFT', '6', '9', 'RIGHT_UP_GRASS_EDGE', 'TUBE_SIDE_LEFT']
+['LEFT_UP_GRASS_EDGE', '8', '16']
+['TUBE_SIDE_RIGHT', '7', 'GROUND']

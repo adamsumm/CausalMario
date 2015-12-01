@@ -1,0 +1,12 @@
+; run-specific parameters for the Infinite Relational Model
+;
+--loops=100
+--nchains=1
+--temp=0.5
+--mcmcflag=0
+--outroot=MarioFullEffectHC
+--configfile=MarioFullEffect.config
+--graphname=MarioFullEffect.graph
+--initfile=
+--hypupdates=5
+--alphaupdate=1

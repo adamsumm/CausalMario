@@ -1,0 +1,684 @@
+Fireball ('Fireball', 'TUBE_SIDE_RIGHT', 'L') 6
+Fireball ('Fireball', '8', 'R') 4
+Fireball ('Fireball', '8', 'D') 5
+Fireball ('Fireball', 'LEFT_UP_GRASS_EDGE', 'D') 5
+Fireball ('Fireball', 'GROUND', 'D') 36
+Fireball ('Fireball', 'GreenKoopa', 'U') 4
+Fireball ('Fireball', 'GreenKoopa', 'R') 30
+Fireball ('Fireball', '7', 'L') 6
+Fireball ('Fireball', 'Goomba', 'U') 11
+Fireball ('Fireball', 'TUBE_SIDE_LEFT', 'R') 24
+Fireball ('Fireball', 'TUBE_TOP_LEFT', 'R') 4
+Fireball ('Fireball', 'LEFT_UP_GRASS_EDGE', 'R') 4
+Fireball ('Fireball', 'Goomba', 'R') 34
+Fireball ('Fireball', '6', 'R') 24
+Fireball ('Fireball', '7', 'D') 36
+TUBE_SIDE_RIGHT ('TUBE_SIDE_RIGHT', 'Fireball', 'R') 6
+SPENT ('SPENT', 'BigMario', 'D') 4
+SPENT ('SPENT', 'FireMario', 'U') 6
+SPENT ('SPENT', 'BigMario', 'L') 5
+SPENT ('SPENT', 'BigMario', 'U') 15
+SPENT ('SPENT', 'Mario', 'U') 7
+FireMario ('FireMario', 'ROCK', 'D') 5
+FireMario ('FireMario', 'COIN', 'R') 8
+FireMario ('FireMario', 'BLOCK', 'D') 8
+FireMario ('FireMario', 'LEFT_UP_GRASS_EDGE', 'R') 8
+FireMario ('FireMario', 'GROUND', 'D') 26
+FireMario ('FireMario', 'BLOCK', 'U') 40
+FireMario ('FireMario', 'TUBE_TOP_LEFT', 'R') 4
+FireMario ('FireMario', 'LEFT_UP_GRASS_EDGE', 'D') 7
+FireMario ('FireMario', 'TUBE_TOP_RIGHT', 'D') 5
+FireMario ('FireMario', 'SPENT', 'D') 6
+FireMario ('FireMario', 'TUBE_SIDE_LEFT', 'R') 4
+FireMario ('FireMario', 'RIGHT_UP_GRASS_EDGE', 'D') 6
+FireMario ('FireMario', 'COIN', 'U') 6
+BigMario ('BigMario', 'TUBE_TOP_RIGHT', 'D') 11
+BigMario ('BigMario', 'ROCK', 'L') 4
+BigMario ('BigMario', 'SPENT', 'R') 5
+BigMario ('BigMario', 'BLOCK', 'U') 152
+BigMario ('BigMario', 'Shell', 'D') 4
+BigMario ('BigMario', 'BLOCK', 'R') 11
+BigMario ('BigMario', 'ROCK', 'R') 6
+BigMario ('BigMario', 'TUBE_TOP_LEFT', 'D') 12
+BigMario ('BigMario', 'SPENT', 'D') 15
+BigMario ('BigMario', 'GROUND', 'D') 98
+BigMario ('BigMario', 'SPENT', 'U') 4
+BigMario ('BigMario', 'COIN', 'D') 9
+BigMario ('BigMario', 'LEFT_UP_GRASS_EDGE', 'R') 23
+BigMario ('BigMario', 'TUBE_TOP_LEFT', 'R') 13
+BigMario ('BigMario', 'ROCK', 'D') 7
+BigMario ('BigMario', 'BLOCK', 'L') 4
+BigMario ('BigMario', 'RIGHT_UP_GRASS_EDGE', 'D') 11
+BigMario ('BigMario', 'COIN', 'R') 11
+BigMario ('BigMario', 'LEFT_UP_GRASS_EDGE', 'D') 20
+BigMario ('BigMario', 'Goomba', 'D') 6
+BigMario ('BigMario', 'TUBE_SIDE_LEFT', 'R') 14
+BigMario ('BigMario', 'LEFT_GRASS_EDGE', 'R') 5
+BigMario ('BigMario', 'COIN', 'U') 10
+BigMario ('BigMario', 'BLOCK', 'D') 36
+TUBE_TOP_RIGHT ('TUBE_TOP_RIGHT', 'FireMario', 'U') 5
+TUBE_TOP_RIGHT ('TUBE_TOP_RIGHT', 'BigMario', 'U') 11
+TUBE_TOP_RIGHT ('TUBE_TOP_RIGHT', 'Mario', 'U') 18
+BLOCK ('BLOCK', 'BigMario', 'L') 11
+BLOCK ('BLOCK', 'FireMario', 'U') 8
+BLOCK ('BLOCK', 'Mario', 'U') 17
+BLOCK ('BLOCK', 'Mario', 'L') 9
+BLOCK ('BLOCK', 'BigMario', 'U') 36
+BLOCK ('BLOCK', 'FireMario', 'D') 40
+BLOCK ('BLOCK', 'Mario', 'D') 136
+BLOCK ('BLOCK', 'BigMario', 'R') 4
+BLOCK ('BLOCK', 'BigMario', 'D') 152
+COIN ('COIN', 'FireMario', 'D') 6
+COIN ('COIN', 'BigMario', 'L') 11
+COIN ('COIN', 'BigMario', 'U') 9
+COIN ('COIN', 'FireMario', 'L') 8
+COIN ('COIN', 'Mario', 'U') 10
+COIN ('COIN', 'Mario', 'L') 15
+COIN ('COIN', 'BigMario', 'D') 10
+Mario ('Mario', 'BLOCK', 'R') 9
+Mario ('Mario', 'ROCK', 'D') 10
+Mario ('Mario', 'GROUND', 'D') 122
+Mario ('Mario', 'Goomba', 'D') 12
+Mario ('Mario', 'TUBE_TOP_LEFT', 'R') 11
+Mario ('Mario', 'TUBE_TOP_LEFT', 'D') 14
+Mario ('Mario', 'TUBE_SIDE_LEFT', 'R') 8
+Mario ('Mario', 'RIGHT_UP_GRASS_EDGE', 'D') 11
+Mario ('Mario', 'GreenKoopa', 'D') 8
+Mario ('Mario', 'ROCK', 'R') 7
+Mario ('Mario', 'LEFT_UP_GRASS_EDGE', 'R') 14
+Mario ('Mario', 'LEFT_UP_GRASS_EDGE', 'D') 18
+Mario ('Mario', 'TUBE_TOP_RIGHT', 'D') 18
+Mario ('Mario', 'BLOCK', 'U') 135
+Mario ('Mario', 'COIN', 'D') 10
+Mario ('Mario', 'BLOCK', 'D') 17
+Mario ('Mario', 'SPENT', 'D') 7
+Mario ('Mario', 'COIN', 'R') 15
+TUBE_TOP_LEFT ('TUBE_TOP_LEFT', 'FireMario', 'L') 4
+TUBE_TOP_LEFT ('TUBE_TOP_LEFT', 'BigMario', 'U') 12
+TUBE_TOP_LEFT ('TUBE_TOP_LEFT', 'Fireball', 'L') 4
+TUBE_TOP_LEFT ('TUBE_TOP_LEFT', 'Mario', 'L') 11
+TUBE_TOP_LEFT ('TUBE_TOP_LEFT', 'BigMario', 'L') 13
+TUBE_TOP_LEFT ('TUBE_TOP_LEFT', 'Mario', 'U') 14
+LEFT_UP_GRASS_EDGE ('LEFT_UP_GRASS_EDGE', 'Mario', 'U') 18
+LEFT_UP_GRASS_EDGE ('LEFT_UP_GRASS_EDGE', 'Goomba', 'U') 7
+LEFT_UP_GRASS_EDGE ('LEFT_UP_GRASS_EDGE', 'FireMario', 'U') 7
+LEFT_UP_GRASS_EDGE ('LEFT_UP_GRASS_EDGE', 'FireMario', 'L') 8
+LEFT_UP_GRASS_EDGE ('LEFT_UP_GRASS_EDGE', 'Fireball', 'U') 5
+LEFT_UP_GRASS_EDGE ('LEFT_UP_GRASS_EDGE', 'BigMario', 'U') 20
+LEFT_UP_GRASS_EDGE ('LEFT_UP_GRASS_EDGE', 'BigMario', 'L') 23
+LEFT_UP_GRASS_EDGE ('LEFT_UP_GRASS_EDGE', 'Fireball', 'L') 4
+LEFT_UP_GRASS_EDGE ('LEFT_UP_GRASS_EDGE', 'Mario', 'L') 14
+7 ('7', 'Fireball', 'U') 36
+7 ('7', 'Fireball', 'R') 6
+6 ('6', 'Fireball', 'L') 24
+8 ('8', 'Fireball', 'L') 4
+8 ('8', 'Fireball', 'U') 5
+GROUND ('GROUND', 'BigMario', 'U') 98
+GROUND ('GROUND', 'Mario', 'U') 122
+GROUND ('GROUND', 'Goomba', 'U') 17
+GROUND ('GROUND', 'Fireball', 'U') 36
+GROUND ('GROUND', 'GreenKoopa', 'U') 8
+GROUND ('GROUND', 'FireMario', 'U') 26
+RIGHT_UP_GRASS_EDGE ('RIGHT_UP_GRASS_EDGE', 'Mario', 'U') 11
+RIGHT_UP_GRASS_EDGE ('RIGHT_UP_GRASS_EDGE', 'FireMario', 'U') 6
+RIGHT_UP_GRASS_EDGE ('RIGHT_UP_GRASS_EDGE', 'BigMario', 'U') 11
+RIGHT_UP_GRASS_EDGE ('RIGHT_UP_GRASS_EDGE', 'Goomba', 'R') 4
+TUBE_SIDE_LEFT ('TUBE_SIDE_LEFT', 'BigMario', 'L') 14
+TUBE_SIDE_LEFT ('TUBE_SIDE_LEFT', 'Fireball', 'L') 24
+TUBE_SIDE_LEFT ('TUBE_SIDE_LEFT', 'FireMario', 'L') 4
+TUBE_SIDE_LEFT ('TUBE_SIDE_LEFT', 'Mario', 'L') 8
+ROCK ('ROCK', 'FireMario', 'U') 5
+ROCK ('ROCK', 'BigMario', 'L') 6
+ROCK ('ROCK', 'BigMario', 'U') 7
+ROCK ('ROCK', 'Mario', 'U') 10
+ROCK ('ROCK', 'Mario', 'L') 7
+ROCK ('ROCK', 'BigMario', 'R') 4
+Shell ('Shell', 'BigMario', 'U') 4
+LEFT_GRASS_EDGE ('LEFT_GRASS_EDGE', 'BigMario', 'L') 5
+Goomba ('Goomba', 'BigMario', 'U') 6
+Goomba ('Goomba', 'Fireball', 'L') 34
+Goomba ('Goomba', 'Mario', 'U') 12
+Goomba ('Goomba', 'LEFT_UP_GRASS_EDGE', 'D') 7
+Goomba ('Goomba', 'RIGHT_UP_GRASS_EDGE', 'L') 4
+Goomba ('Goomba', 'GROUND', 'D') 17
+Goomba ('Goomba', 'Fireball', 'D') 11
+GreenKoopa ('GreenKoopa', 'Fireball', 'L') 30
+GreenKoopa ('GreenKoopa', 'GROUND', 'D') 8
+GreenKoopa ('GreenKoopa', 'Mario', 'U') 8
+GreenKoopa ('GreenKoopa', 'Fireball', 'D') 4
+Fireball ('LEFT_UP_GRASS_EDGE', 'Fireball', 'L') 4
+Fireball ('8', 'Fireball', 'U') 5
+Fireball ('GreenKoopa', 'Fireball', 'D') 4
+Fireball ('Goomba', 'Fireball', 'L') 34
+Fireball ('TUBE_TOP_LEFT', 'Fireball', 'L') 4
+Fireball ('TUBE_SIDE_RIGHT', 'Fireball', 'R') 6
+Fireball ('8', 'Fireball', 'L') 4
+Fireball ('6', 'Fireball', 'L') 24
+Fireball ('LEFT_UP_GRASS_EDGE', 'Fireball', 'U') 5
+Fireball ('GROUND', 'Fireball', 'U') 36
+Fireball ('7', 'Fireball', 'R') 6
+Fireball ('Goomba', 'Fireball', 'D') 11
+Fireball ('7', 'Fireball', 'U') 36
+Fireball ('GreenKoopa', 'Fireball', 'L') 30
+Fireball ('TUBE_SIDE_LEFT', 'Fireball', 'L') 24
+TUBE_SIDE_RIGHT ('Fireball', 'TUBE_SIDE_RIGHT', 'L') 6
+SPENT ('BigMario', 'SPENT', 'D') 15
+SPENT ('BigMario', 'SPENT', 'R') 5
+SPENT ('BigMario', 'SPENT', 'U') 4
+SPENT ('FireMario', 'SPENT', 'D') 6
+SPENT ('Mario', 'SPENT', 'D') 7
+FireMario ('COIN', 'FireMario', 'D') 6
+FireMario ('TUBE_TOP_LEFT', 'FireMario', 'L') 4
+FireMario ('LEFT_UP_GRASS_EDGE', 'FireMario', 'U') 7
+FireMario ('GROUND', 'FireMario', 'U') 26
+FireMario ('LEFT_UP_GRASS_EDGE', 'FireMario', 'L') 8
+FireMario ('TUBE_SIDE_LEFT', 'FireMario', 'L') 4
+FireMario ('ROCK', 'FireMario', 'U') 5
+FireMario ('SPENT', 'FireMario', 'U') 6
+FireMario ('BLOCK', 'FireMario', 'D') 40
+FireMario ('RIGHT_UP_GRASS_EDGE', 'FireMario', 'U') 6
+FireMario ('COIN', 'FireMario', 'L') 8
+FireMario ('BLOCK', 'FireMario', 'U') 8
+FireMario ('TUBE_TOP_RIGHT', 'FireMario', 'U') 5
+BigMario ('GROUND', 'BigMario', 'U') 98
+BigMario ('Goomba', 'BigMario', 'U') 6
+BigMario ('ROCK', 'BigMario', 'L') 6
+BigMario ('SPENT', 'BigMario', 'U') 15
+BigMario ('BLOCK', 'BigMario', 'U') 36
+BigMario ('BLOCK', 'BigMario', 'R') 4
+BigMario ('SPENT', 'BigMario', 'D') 4
+BigMario ('COIN', 'BigMario', 'L') 11
+BigMario ('TUBE_SIDE_LEFT', 'BigMario', 'L') 14
+BigMario ('LEFT_UP_GRASS_EDGE', 'BigMario', 'U') 20
+BigMario ('TUBE_TOP_LEFT', 'BigMario', 'U') 12
+BigMario ('COIN', 'BigMario', 'D') 10
+BigMario ('RIGHT_UP_GRASS_EDGE', 'BigMario', 'U') 11
+BigMario ('BLOCK', 'BigMario', 'L') 11
+BigMario ('ROCK', 'BigMario', 'U') 7
+BigMario ('LEFT_UP_GRASS_EDGE', 'BigMario', 'L') 23
+BigMario ('TUBE_TOP_RIGHT', 'BigMario', 'U') 11
+BigMario ('LEFT_GRASS_EDGE', 'BigMario', 'L') 5
+BigMario ('TUBE_TOP_LEFT', 'BigMario', 'L') 13
+BigMario ('ROCK', 'BigMario', 'R') 4
+BigMario ('COIN', 'BigMario', 'U') 9
+BigMario ('SPENT', 'BigMario', 'L') 5
+BigMario ('BLOCK', 'BigMario', 'D') 152
+BigMario ('Shell', 'BigMario', 'U') 4
+TUBE_TOP_RIGHT ('Mario', 'TUBE_TOP_RIGHT', 'D') 18
+TUBE_TOP_RIGHT ('BigMario', 'TUBE_TOP_RIGHT', 'D') 11
+TUBE_TOP_RIGHT ('FireMario', 'TUBE_TOP_RIGHT', 'D') 5
+BLOCK ('BigMario', 'BLOCK', 'L') 4
+BLOCK ('Mario', 'BLOCK', 'R') 9
+BLOCK ('FireMario', 'BLOCK', 'D') 8
+BLOCK ('FireMario', 'BLOCK', 'U') 40
+BLOCK ('BigMario', 'BLOCK', 'U') 152
+BLOCK ('Mario', 'BLOCK', 'U') 135
+BLOCK ('BigMario', 'BLOCK', 'R') 11
+BLOCK ('Mario', 'BLOCK', 'D') 17
+BLOCK ('BigMario', 'BLOCK', 'D') 36
+COIN ('BigMario', 'COIN', 'R') 11
+COIN ('FireMario', 'COIN', 'R') 8
+COIN ('BigMario', 'COIN', 'D') 9
+COIN ('BigMario', 'COIN', 'U') 10
+COIN ('Mario', 'COIN', 'R') 15
+COIN ('Mario', 'COIN', 'D') 10
+COIN ('FireMario', 'COIN', 'U') 6
+Mario ('BLOCK', 'Mario', 'L') 9
+Mario ('SPENT', 'Mario', 'U') 7
+Mario ('LEFT_UP_GRASS_EDGE', 'Mario', 'U') 18
+Mario ('ROCK', 'Mario', 'U') 10
+Mario ('RIGHT_UP_GRASS_EDGE', 'Mario', 'U') 11
+Mario ('BLOCK', 'Mario', 'U') 17
+Mario ('TUBE_SIDE_LEFT', 'Mario', 'L') 8
+Mario ('TUBE_TOP_LEFT', 'Mario', 'L') 11
+Mario ('LEFT_UP_GRASS_EDGE', 'Mario', 'L') 14
+Mario ('Goomba', 'Mario', 'U') 12
+Mario ('COIN', 'Mario', 'U') 10
+Mario ('ROCK', 'Mario', 'L') 7
+Mario ('TUBE_TOP_RIGHT', 'Mario', 'U') 18
+Mario ('GROUND', 'Mario', 'U') 122
+Mario ('GreenKoopa', 'Mario', 'U') 8
+Mario ('BLOCK', 'Mario', 'D') 136
+Mario ('COIN', 'Mario', 'L') 15
+Mario ('TUBE_TOP_LEFT', 'Mario', 'U') 14
+TUBE_TOP_LEFT ('BigMario', 'TUBE_TOP_LEFT', 'D') 12
+TUBE_TOP_LEFT ('Fireball', 'TUBE_TOP_LEFT', 'R') 4
+TUBE_TOP_LEFT ('FireMario', 'TUBE_TOP_LEFT', 'R') 4
+TUBE_TOP_LEFT ('Mario', 'TUBE_TOP_LEFT', 'D') 14
+TUBE_TOP_LEFT ('Mario', 'TUBE_TOP_LEFT', 'R') 11
+TUBE_TOP_LEFT ('BigMario', 'TUBE_TOP_LEFT', 'R') 13
+LEFT_UP_GRASS_EDGE ('Goomba', 'LEFT_UP_GRASS_EDGE', 'D') 7
+LEFT_UP_GRASS_EDGE ('FireMario', 'LEFT_UP_GRASS_EDGE', 'R') 8
+LEFT_UP_GRASS_EDGE ('Fireball', 'LEFT_UP_GRASS_EDGE', 'R') 4
+LEFT_UP_GRASS_EDGE ('Mario', 'LEFT_UP_GRASS_EDGE', 'R') 14
+LEFT_UP_GRASS_EDGE ('Fireball', 'LEFT_UP_GRASS_EDGE', 'D') 5
+LEFT_UP_GRASS_EDGE ('BigMario', 'LEFT_UP_GRASS_EDGE', 'D') 20
+LEFT_UP_GRASS_EDGE ('BigMario', 'LEFT_UP_GRASS_EDGE', 'R') 23
+LEFT_UP_GRASS_EDGE ('FireMario', 'LEFT_UP_GRASS_EDGE', 'D') 7
+LEFT_UP_GRASS_EDGE ('Mario', 'LEFT_UP_GRASS_EDGE', 'D') 18
+7 ('Fireball', '7', 'L') 6
+7 ('Fireball', '7', 'D') 36
+6 ('Fireball', '6', 'R') 24
+8 ('Fireball', '8', 'D') 5
+8 ('Fireball', '8', 'R') 4
+GROUND ('Mario', 'GROUND', 'D') 122
+GROUND ('BigMario', 'GROUND', 'D') 98
+GROUND ('GreenKoopa', 'GROUND', 'D') 8
+GROUND ('FireMario', 'GROUND', 'D') 26
+GROUND ('Fireball', 'GROUND', 'D') 36
+GROUND ('Goomba', 'GROUND', 'D') 17
+RIGHT_UP_GRASS_EDGE ('FireMario', 'RIGHT_UP_GRASS_EDGE', 'D') 6
+RIGHT_UP_GRASS_EDGE ('BigMario', 'RIGHT_UP_GRASS_EDGE', 'D') 11
+RIGHT_UP_GRASS_EDGE ('Goomba', 'RIGHT_UP_GRASS_EDGE', 'L') 4
+RIGHT_UP_GRASS_EDGE ('Mario', 'RIGHT_UP_GRASS_EDGE', 'D') 11
+TUBE_SIDE_LEFT ('BigMario', 'TUBE_SIDE_LEFT', 'R') 14
+TUBE_SIDE_LEFT ('Mario', 'TUBE_SIDE_LEFT', 'R') 8
+TUBE_SIDE_LEFT ('FireMario', 'TUBE_SIDE_LEFT', 'R') 4
+TUBE_SIDE_LEFT ('Fireball', 'TUBE_SIDE_LEFT', 'R') 24
+ROCK ('Mario', 'ROCK', 'D') 10
+ROCK ('BigMario', 'ROCK', 'L') 4
+ROCK ('Mario', 'ROCK', 'R') 7
+ROCK ('FireMario', 'ROCK', 'D') 5
+ROCK ('BigMario', 'ROCK', 'D') 7
+ROCK ('BigMario', 'ROCK', 'R') 6
+Shell ('BigMario', 'Shell', 'D') 4
+LEFT_GRASS_EDGE ('BigMario', 'LEFT_GRASS_EDGE', 'R') 5
+Goomba ('LEFT_UP_GRASS_EDGE', 'Goomba', 'U') 7
+Goomba ('BigMario', 'Goomba', 'D') 6
+Goomba ('Fireball', 'Goomba', 'R') 34
+Goomba ('Mario', 'Goomba', 'D') 12
+Goomba ('GROUND', 'Goomba', 'U') 17
+Goomba ('RIGHT_UP_GRASS_EDGE', 'Goomba', 'R') 4
+Goomba ('Fireball', 'Goomba', 'U') 11
+GreenKoopa ('GROUND', 'GreenKoopa', 'U') 8
+GreenKoopa ('Mario', 'GreenKoopa', 'D') 8
+GreenKoopa ('Fireball', 'GreenKoopa', 'U') 4
+GreenKoopa ('Fireball', 'GreenKoopa', 'R') 30
+R ('Mario', 'BLOCK', 'R') 9
+R ('BigMario', 'BLOCK', 'R') 11
+R ('Fireball', '8', 'R') 4
+R ('BigMario', 'SPENT', 'R') 5
+R ('7', 'Fireball', 'R') 6
+R ('FireMario', 'TUBE_TOP_LEFT', 'R') 4
+R ('BLOCK', 'BigMario', 'R') 4
+R ('Fireball', 'GreenKoopa', 'R') 30
+R ('BigMario', 'ROCK', 'R') 6
+R ('BigMario', 'LEFT_GRASS_EDGE', 'R') 5
+R ('FireMario', 'LEFT_UP_GRASS_EDGE', 'R') 8
+R ('Mario', 'TUBE_TOP_LEFT', 'R') 11
+R ('TUBE_SIDE_RIGHT', 'Fireball', 'R') 6
+R ('Mario', 'TUBE_SIDE_LEFT', 'R') 8
+R ('BigMario', 'LEFT_UP_GRASS_EDGE', 'R') 23
+R ('Fireball', 'TUBE_SIDE_LEFT', 'R') 24
+R ('BigMario', 'TUBE_TOP_LEFT', 'R') 13
+R ('FireMario', 'COIN', 'R') 8
+R ('Fireball', 'TUBE_TOP_LEFT', 'R') 4
+R ('Mario', 'ROCK', 'R') 7
+R ('Fireball', 'LEFT_UP_GRASS_EDGE', 'R') 4
+R ('Fireball', 'Goomba', 'R') 34
+R ('Mario', 'LEFT_UP_GRASS_EDGE', 'R') 14
+R ('BigMario', 'COIN', 'R') 11
+R ('FireMario', 'TUBE_SIDE_LEFT', 'R') 4
+R ('ROCK', 'BigMario', 'R') 4
+R ('BigMario', 'TUBE_SIDE_LEFT', 'R') 14
+R ('Fireball', '6', 'R') 24
+R ('RIGHT_UP_GRASS_EDGE', 'Goomba', 'R') 4
+R ('Mario', 'COIN', 'R') 15
+U ('GROUND', 'BigMario', 'U') 98
+U ('Goomba', 'BigMario', 'U') 6
+U ('LEFT_UP_GRASS_EDGE', 'FireMario', 'U') 7
+U ('BigMario', 'SPENT', 'U') 4
+U ('SPENT', 'BigMario', 'U') 15
+U ('ROCK', 'FireMario', 'U') 5
+U ('BLOCK', 'BigMario', 'U') 36
+U ('SPENT', 'Mario', 'U') 7
+U ('RIGHT_UP_GRASS_EDGE', 'FireMario', 'U') 6
+U ('8', 'Fireball', 'U') 5
+U ('BLOCK', 'FireMario', 'U') 8
+U ('LEFT_UP_GRASS_EDGE', 'Mario', 'U') 18
+U ('GreenKoopa', 'Mario', 'U') 8
+U ('LEFT_UP_GRASS_EDGE', 'BigMario', 'U') 20
+U ('ROCK', 'Mario', 'U') 10
+U ('TUBE_TOP_LEFT', 'BigMario', 'U') 12
+U ('FireMario', 'BLOCK', 'U') 40
+U ('SPENT', 'FireMario', 'U') 6
+U ('RIGHT_UP_GRASS_EDGE', 'Mario', 'U') 11
+U ('BLOCK', 'Mario', 'U') 17
+U ('RIGHT_UP_GRASS_EDGE', 'BigMario', 'U') 11
+U ('GROUND', 'FireMario', 'U') 26
+U ('ROCK', 'BigMario', 'U') 7
+U ('TUBE_TOP_RIGHT', 'BigMario', 'U') 11
+U ('GROUND', 'Fireball', 'U') 36
+U ('Mario', 'BLOCK', 'U') 135
+U ('Goomba', 'Mario', 'U') 12
+U ('COIN', 'Mario', 'U') 10
+U ('COIN', 'BigMario', 'U') 9
+U ('BigMario', 'BLOCK', 'U') 152
+U ('FireMario', 'COIN', 'U') 6
+U ('7', 'Fireball', 'U') 36
+U ('TUBE_TOP_RIGHT', 'Mario', 'U') 18
+U ('GROUND', 'Mario', 'U') 122
+U ('LEFT_UP_GRASS_EDGE', 'Goomba', 'U') 7
+U ('GROUND', 'GreenKoopa', 'U') 8
+U ('Shell', 'BigMario', 'U') 4
+U ('GROUND', 'Goomba', 'U') 17
+U ('LEFT_UP_GRASS_EDGE', 'Fireball', 'U') 5
+U ('BigMario', 'COIN', 'U') 10
+U ('Fireball', 'GreenKoopa', 'U') 4
+U ('TUBE_TOP_RIGHT', 'FireMario', 'U') 5
+U ('Fireball', 'Goomba', 'U') 11
+U ('TUBE_TOP_LEFT', 'Mario', 'U') 14
+D ('BigMario', 'TUBE_TOP_RIGHT', 'D') 11
+D ('Mario', 'ROCK', 'D') 10
+D ('Goomba', 'LEFT_UP_GRASS_EDGE', 'D') 7
+D ('Mario', 'GROUND', 'D') 122
+D ('FireMario', 'RIGHT_UP_GRASS_EDGE', 'D') 6
+D ('Fireball', 'LEFT_UP_GRASS_EDGE', 'D') 5
+D ('FireMario', 'SPENT', 'D') 6
+D ('GreenKoopa', 'Fireball', 'D') 4
+D ('COIN', 'FireMario', 'D') 6
+D ('BigMario', 'TUBE_TOP_LEFT', 'D') 12
+D ('BigMario', 'SPENT', 'D') 15
+D ('BigMario', 'GROUND', 'D') 98
+D ('Mario', 'Goomba', 'D') 12
+D ('FireMario', 'LEFT_UP_GRASS_EDGE', 'D') 7
+D ('Mario', 'TUBE_TOP_LEFT', 'D') 14
+D ('Fireball', '8', 'D') 5
+D ('BLOCK', 'FireMario', 'D') 40
+D ('BigMario', 'COIN', 'D') 9
+D ('Mario', 'RIGHT_UP_GRASS_EDGE', 'D') 11
+D ('BigMario', 'ROCK', 'D') 7
+D ('Goomba', 'GROUND', 'D') 17
+D ('SPENT', 'BigMario', 'D') 4
+D ('BigMario', 'RIGHT_UP_GRASS_EDGE', 'D') 11
+D ('FireMario', 'GROUND', 'D') 26
+D ('Mario', 'LEFT_UP_GRASS_EDGE', 'D') 18
+D ('Mario', 'TUBE_TOP_RIGHT', 'D') 18
+D ('BLOCK', 'BigMario', 'D') 152
+D ('BLOCK', 'Mario', 'D') 136
+D ('BigMario', 'LEFT_UP_GRASS_EDGE', 'D') 20
+D ('Mario', 'COIN', 'D') 10
+D ('Goomba', 'Fireball', 'D') 11
+D ('COIN', 'BigMario', 'D') 10
+D ('BigMario', 'Goomba', 'D') 6
+D ('FireMario', 'ROCK', 'D') 5
+D ('BigMario', 'Shell', 'D') 4
+D ('Mario', 'BLOCK', 'D') 17
+D ('Fireball', '7', 'D') 36
+D ('GreenKoopa', 'GROUND', 'D') 8
+D ('Fireball', 'GROUND', 'D') 36
+D ('FireMario', 'TUBE_TOP_RIGHT', 'D') 5
+D ('Mario', 'SPENT', 'D') 7
+D ('Mario', 'GreenKoopa', 'D') 8
+D ('BigMario', 'BLOCK', 'D') 36
+D ('FireMario', 'BLOCK', 'D') 8
+L ('BigMario', 'BLOCK', 'L') 4
+L ('Fireball', 'TUBE_SIDE_RIGHT', 'L') 6
+L ('BigMario', 'ROCK', 'L') 4
+L ('ROCK', 'BigMario', 'L') 6
+L ('BLOCK', 'Mario', 'L') 9
+L ('6', 'Fireball', 'L') 24
+L ('Goomba', 'Fireball', 'L') 34
+L ('LEFT_GRASS_EDGE', 'BigMario', 'L') 5
+L ('TUBE_SIDE_LEFT', 'BigMario', 'L') 14
+L ('Goomba', 'RIGHT_UP_GRASS_EDGE', 'L') 4
+L ('TUBE_SIDE_LEFT', 'Fireball', 'L') 24
+L ('LEFT_UP_GRASS_EDGE', 'Fireball', 'L') 4
+L ('TUBE_TOP_LEFT', 'Fireball', 'L') 4
+L ('TUBE_TOP_LEFT', 'FireMario', 'L') 4
+L ('LEFT_UP_GRASS_EDGE', 'FireMario', 'L') 8
+L ('8', 'Fireball', 'L') 4
+L ('Fireball', '7', 'L') 6
+L ('BLOCK', 'BigMario', 'L') 11
+L ('GreenKoopa', 'Fireball', 'L') 30
+L ('LEFT_UP_GRASS_EDGE', 'BigMario', 'L') 23
+L ('TUBE_SIDE_LEFT', 'Mario', 'L') 8
+L ('TUBE_TOP_LEFT', 'Mario', 'L') 11
+L ('LEFT_UP_GRASS_EDGE', 'Mario', 'L') 14
+L ('COIN', 'BigMario', 'L') 11
+L ('COIN', 'FireMario', 'L') 8
+L ('TUBE_TOP_LEFT', 'BigMario', 'L') 13
+L ('ROCK', 'Mario', 'L') 7
+L ('SPENT', 'BigMario', 'L') 5
+L ('TUBE_SIDE_LEFT', 'FireMario', 'L') 4
+L ('COIN', 'Mario', 'L') 15
+('GROUND', 'BigMario', 'U') ('None', 'OTHER', 'None', 'None') 25
+('GROUND', 'BigMario', 'U') ('VelChange', 'B', 'None', 'vy') 72
+('Mario', 'BLOCK', 'R') ('VelChange', 'A', 'None', 'vx') 8
+('Mario', 'GROUND', 'D') ('None', 'OTHER', 'None', 'None') 7
+('Mario', 'GROUND', 'D') ('VelChange', 'A', 'None', 'vy') 113
+('Fireball', 'GROUND', 'D') ('VelChange', 'A', 'None', 'vy') 33
+('LEFT_UP_GRASS_EDGE', 'FireMario', 'L') ('VelChange', 'B', 'None', 'vx') 4
+('Mario', 'TUBE_TOP_LEFT', 'R') ('None', 'OTHER', 'None', 'None') 4
+('Mario', 'TUBE_TOP_LEFT', 'R') ('VelChange', 'A', 'None', 'vx') 6
+('FireMario', 'LEFT_UP_GRASS_EDGE', 'D') ('VelChange', 'A', 'None', 'vy') 6
+('BigMario', 'LEFT_UP_GRASS_EDGE', 'R') ('None', 'OTHER', 'None', 'None') 6
+('BigMario', 'LEFT_UP_GRASS_EDGE', 'R') ('VelChange', 'A', 'None', 'vx') 15
+('BigMario', 'TUBE_TOP_LEFT', 'R') ('VelChange', 'A', 'None', 'vx') 10
+('ROCK', 'FireMario', 'U') ('VelChange', 'B', 'None', 'vy') 5
+('TUBE_SIDE_LEFT', 'Mario', 'L') ('VelChange', 'B', 'None', 'vx') 8
+('GROUND', 'Mario', 'U') ('None', 'OTHER', 'None', 'None') 7
+('GROUND', 'Mario', 'U') ('VelChange', 'B', 'None', 'vy') 112
+('FireMario', 'TUBE_SIDE_LEFT', 'R') ('VelChange', 'A', 'None', 'vx') 4
+('GreenKoopa', 'Fireball', 'L') ('append', 'B', 'None', 'None') 4
+('GreenKoopa', 'Fireball', 'L') ('None', 'OTHER', 'None', 'None') 13
+('GreenKoopa', 'Fireball', 'L') ('VelChange', 'B', 'None', 'vy') 4
+('Mario', 'RIGHT_UP_GRASS_EDGE', 'D') ('None', 'OTHER', 'None', 'None') 4
+('Mario', 'RIGHT_UP_GRASS_EDGE', 'D') ('VelChange', 'A', 'None', 'vy') 7
+('LEFT_UP_GRASS_EDGE', 'Goomba', 'U') ('VelChange', 'B', 'None', 'vy') 6
+('Mario', 'BLOCK', 'D') ('None', 'OTHER', 'None', 'None') 6
+('Mario', 'BLOCK', 'D') ('VelChange', 'A', 'None', 'vy') 11
+('GreenKoopa', 'GROUND', 'D') ('VelChange', 'A', 'None', 'vy') 6
+('TUBE_SIDE_LEFT', 'FireMario', 'L') ('VelChange', 'B', 'None', 'vx') 4
+('FireMario', 'COIN', 'U') ('Delete', 'OTHER', 'None', 'None') 6
+('BigMario', 'COIN', 'U') ('Delete', 'OTHER', 'None', 'None') 8
+('Mario', 'COIN', 'R') ('Delete', 'OTHER', 'None', 'None') 14
+('BigMario', 'BLOCK', 'D') ('None', 'OTHER', 'None', 'None') 14
+('BigMario', 'BLOCK', 'D') ('VelChange', 'A', 'None', 'vy') 21
+('TUBE_TOP_LEFT', 'Mario', 'U') ('VelChange', 'B', 'None', 'vy') 10
+('Fireball', '6', 'R') ('Delete', 'A', 'None', 'None') 11
+('Fireball', '6', 'R') ('VelChange', 'A', 'None', 'vx') 11
+('LEFT_UP_GRASS_EDGE', 'FireMario', 'U') ('VelChange', 'B', 'None', 'vy') 6
+('TUBE_TOP_LEFT', 'BigMario', 'U') ('None', 'OTHER', 'None', 'None') 9
+('Mario', 'ROCK', 'D') ('VelChange', 'A', 'None', 'vy') 10
+('RIGHT_UP_GRASS_EDGE', 'FireMario', 'U') ('None', 'OTHER', 'None', 'None') 4
+('FireMario', 'BLOCK', 'D') ('None', 'OTHER', 'None', 'None') 4
+('FireMario', 'BLOCK', 'D') ('VelChange', 'A', 'None', 'vy') 4
+('BLOCK', 'Mario', 'L') ('VelChange', 'B', 'None', 'vx') 8
+('BLOCK', 'BigMario', 'U') ('None', 'OTHER', 'None', 'None') 14
+('BLOCK', 'BigMario', 'U') ('VelChange', 'B', 'None', 'vy') 21
+('GROUND', 'FireMario', 'U') ('None', 'OTHER', 'None', 'None') 4
+('GROUND', 'FireMario', 'U') ('VelChange', 'B', 'None', 'vy') 18
+('BigMario', 'ROCK', 'R') ('VelChange', 'A', 'None', 'vx') 5
+('LEFT_UP_GRASS_EDGE', 'Mario', 'U') ('VelChange', 'B', 'None', 'vy') 14
+('COIN', 'BigMario', 'L') ('Delete', 'OTHER', 'None', 'None') 11
+('BigMario', 'GROUND', 'D') ('None', 'OTHER', 'None', 'None') 25
+('BigMario', 'GROUND', 'D') ('VelChange', 'A', 'None', 'vy') 72
+('LEFT_UP_GRASS_EDGE', 'BigMario', 'U') ('None', 'OTHER', 'None', 'None') 7
+('LEFT_UP_GRASS_EDGE', 'BigMario', 'U') ('VelChange', 'B', 'None', 'vy') 11
+('ROCK', 'Mario', 'U') ('VelChange', 'B', 'None', 'vy') 10
+('Mario', 'Goomba', 'D') ('VelChange', 'A', 'None', 'vy') 6
+('Mario', 'Goomba', 'D') ('Delete', 'B', 'None', 'None') 6
+('Mario', 'TUBE_TOP_LEFT', 'D') ('VelChange', 'A', 'None', 'vy') 10
+('Mario', 'TUBE_SIDE_LEFT', 'R') ('VelChange', 'A', 'None', 'vx') 8
+('Mario', 'ROCK', 'R') ('VelChange', 'A', 'None', 'vx') 7
+('Goomba', 'Mario', 'U') ('Delete', 'A', 'None', 'None') 6
+('Goomba', 'Mario', 'U') ('VelChange', 'B', 'None', 'vy') 6
+('Fireball', 'Goomba', 'R') ('VelChange', 'B', 'None', 'vx') 5
+('Fireball', 'Goomba', 'R') ('None', 'OTHER', 'None', 'None') 13
+('Fireball', 'Goomba', 'R') ('append', 'A', 'None', 'None') 5
+('LEFT_UP_GRASS_EDGE', 'BigMario', 'L') ('VelChange', 'B', 'None', 'vx') 15
+('LEFT_UP_GRASS_EDGE', 'BigMario', 'L') ('None', 'OTHER', 'None', 'None') 6
+('FireMario', 'GROUND', 'D') ('None', 'OTHER', 'None', 'None') 4
+('FireMario', 'GROUND', 'D') ('VelChange', 'A', 'None', 'vy') 18
+('LEFT_UP_GRASS_EDGE', 'Mario', 'L') ('VelChange', 'B', 'None', 'vx') 12
+('BigMario', 'SPENT', 'D') ('None', 'OTHER', 'None', 'None') 11
+('BigMario', 'SPENT', 'D') ('VelChange', 'A', 'None', 'vy') 4
+('BigMario', 'LEFT_UP_GRASS_EDGE', 'D') ('None', 'OTHER', 'None', 'None') 7
+('BigMario', 'LEFT_UP_GRASS_EDGE', 'D') ('VelChange', 'A', 'None', 'vy') 11
+('COIN', 'Mario', 'U') ('Delete', 'OTHER', 'None', 'None') 10
+('Goomba', 'Fireball', 'D') ('None', 'OTHER', 'None', 'None') 4
+('COIN', 'BigMario', 'D') ('Delete', 'OTHER', 'None', 'None') 8
+('TUBE_TOP_RIGHT', 'Mario', 'U') ('None', 'OTHER', 'None', 'None') 11
+('TUBE_TOP_RIGHT', 'Mario', 'U') ('VelChange', 'B', 'None', 'vy') 5
+('BigMario', 'TUBE_SIDE_LEFT', 'R') ('VelChange', 'A', 'None', 'vx') 11
+('FireMario', 'RIGHT_UP_GRASS_EDGE', 'D') ('None', 'OTHER', 'None', 'None') 4
+('GROUND', 'Fireball', 'U') ('VelChange', 'B', 'None', 'vy') 33
+('SPENT', 'BigMario', 'L') ('VelChange', 'B', 'None', 'vx') 5
+('GreenKoopa', 'Mario', 'U') ('Delete', 'A', 'None', 'None') 4
+('GreenKoopa', 'Mario', 'U') ('VelChange', 'B', 'None', 'vy') 4
+('Mario', 'SPENT', 'D') ('None', 'OTHER', 'None', 'None') 4
+('COIN', 'Mario', 'L') ('Delete', 'OTHER', 'None', 'None') 14
+('BigMario', 'TUBE_TOP_RIGHT', 'D') ('None', 'OTHER', 'None', 'None') 7
+('BigMario', 'TUBE_TOP_RIGHT', 'D') ('VelChange', 'A', 'None', 'vy') 4
+('Goomba', 'LEFT_UP_GRASS_EDGE', 'D') ('VelChange', 'A', 'None', 'vy') 6
+('ROCK', 'BigMario', 'L') ('VelChange', 'B', 'None', 'vx') 5
+('Goomba', 'GROUND', 'D') ('VelChange', 'A', 'None', 'vy') 13
+('SPENT', 'BigMario', 'U') ('None', 'OTHER', 'None', 'None') 11
+('SPENT', 'BigMario', 'U') ('VelChange', 'B', 'None', 'vy') 4
+('SPENT', 'Mario', 'U') ('None', 'OTHER', 'None', 'None') 4
+('BigMario', 'BLOCK', 'R') ('VelChange', 'A', 'None', 'vx') 9
+('BLOCK', 'FireMario', 'U') ('None', 'OTHER', 'None', 'None') 4
+('BLOCK', 'FireMario', 'U') ('VelChange', 'B', 'None', 'vy') 4
+('COIN', 'FireMario', 'D') ('Delete', 'OTHER', 'None', 'None') 6
+('SPENT', 'BigMario', 'D') ('VelChange', 'B', 'None', 'vy') 4
+('BigMario', 'COIN', 'R') ('Delete', 'OTHER', 'None', 'None') 11
+('Fireball', 'Goomba', 'U') ('None', 'OTHER', 'None', 'None') 4
+('BigMario', 'SPENT', 'U') ('VelChange', 'A', 'None', 'vy') 4
+('BLOCK', 'FireMario', 'D') ('Change', 'A', 'SPENT', 'None') 11
+('BLOCK', 'FireMario', 'D') ('VelChange', 'B', 'None', 'vy') 14
+('BLOCK', 'FireMario', 'D') ('append', 'OTHER', 'None', 'None') 11
+('RIGHT_UP_GRASS_EDGE', 'Mario', 'U') ('None', 'OTHER', 'None', 'None') 4
+('RIGHT_UP_GRASS_EDGE', 'Mario', 'U') ('VelChange', 'B', 'None', 'vy') 7
+('BigMario', 'COIN', 'D') ('Delete', 'OTHER', 'None', 'None') 9
+('BLOCK', 'Mario', 'U') ('None', 'OTHER', 'None', 'None') 6
+('BLOCK', 'Mario', 'U') ('VelChange', 'B', 'None', 'vy') 11
+('RIGHT_UP_GRASS_EDGE', 'BigMario', 'U') ('None', 'OTHER', 'None', 'None') 7
+('RIGHT_UP_GRASS_EDGE', 'BigMario', 'U') ('VelChange', 'B', 'None', 'vy') 4
+('BLOCK', 'BigMario', 'L') ('VelChange', 'B', 'None', 'vx') 9
+('ROCK', 'BigMario', 'U') ('VelChange', 'B', 'None', 'vy') 6
+('6', 'Fireball', 'L') ('VelChange', 'B', 'None', 'vx') 11
+('6', 'Fireball', 'L') ('Delete', 'B', 'None', 'None') 11
+('Mario', 'LEFT_UP_GRASS_EDGE', 'R') ('VelChange', 'A', 'None', 'vx') 12
+('TUBE_TOP_LEFT', 'Mario', 'L') ('VelChange', 'B', 'None', 'vx') 6
+('TUBE_TOP_LEFT', 'Mario', 'L') ('None', 'OTHER', 'None', 'None') 4
+('Mario', 'BLOCK', 'U') ('VelChange', 'A', 'None', 'vy') 61
+('Mario', 'BLOCK', 'U') ('Change', 'B', 'SPENT', 'None') 34
+('Mario', 'BLOCK', 'U') ('append', 'OTHER', 'None', 'None') 34
+('Mario', 'BLOCK', 'U') ('VelChange', 'A', 'None', 'vx') 5
+('COIN', 'FireMario', 'L') ('Delete', 'OTHER', 'None', 'None') 8
+('ROCK', 'Mario', 'L') ('VelChange', 'B', 'None', 'vx') 7
+('7', 'Fireball', 'U') ('VelChange', 'B', 'None', 'vy') 33
+('FireMario', 'ROCK', 'D') ('VelChange', 'A', 'None', 'vy') 5
+('Fireball', '7', 'D') ('VelChange', 'A', 'None', 'vy') 33
+('BigMario', 'ROCK', 'D') ('VelChange', 'A', 'None', 'vy') 6
+('FireMario', 'BLOCK', 'U') ('VelChange', 'A', 'None', 'vy') 14
+('FireMario', 'BLOCK', 'U') ('Change', 'B', 'SPENT', 'None') 11
+('FireMario', 'BLOCK', 'U') ('append', 'OTHER', 'None', 'None') 11
+('BLOCK', 'BigMario', 'D') ('VelChange', 'B', 'None', 'vy') 64
+('BLOCK', 'BigMario', 'D') ('Delete', 'OTHER', 'None', 'None') 41
+('BLOCK', 'BigMario', 'D') ('append', 'OTHER', 'None', 'None') 23
+('BLOCK', 'BigMario', 'D') ('Change', 'A', 'SPENT', 'None') 23
+('BigMario', 'SPENT', 'R') ('VelChange', 'A', 'None', 'vx') 5
+('BigMario', 'BLOCK', 'U') ('Change', 'B', 'SPENT', 'None') 23
+('BigMario', 'BLOCK', 'U') ('VelChange', 'A', 'None', 'vy') 64
+('BigMario', 'BLOCK', 'U') ('Delete', 'OTHER', 'None', 'None') 41
+('BigMario', 'BLOCK', 'U') ('append', 'OTHER', 'None', 'None') 23
+('GROUND', 'GreenKoopa', 'U') ('VelChange', 'B', 'None', 'vy') 6
+('TUBE_SIDE_LEFT', 'BigMario', 'L') ('VelChange', 'B', 'None', 'vx') 11
+('FireMario', 'LEFT_UP_GRASS_EDGE', 'R') ('VelChange', 'A', 'None', 'vx') 4
+('Fireball', 'GreenKoopa', 'R') ('None', 'OTHER', 'None', 'None') 13
+('Fireball', 'GreenKoopa', 'R') ('VelChange', 'A', 'None', 'vy') 4
+('Fireball', 'GreenKoopa', 'R') ('append', 'A', 'None', 'None') 4
+('Fireball', 'TUBE_SIDE_LEFT', 'R') ('Delete', 'A', 'None', 'None') 11
+('Fireball', 'TUBE_SIDE_LEFT', 'R') ('VelChange', 'A', 'None', 'vx') 11
+('FireMario', 'COIN', 'R') ('Delete', 'OTHER', 'None', 'None') 8
+('BigMario', 'TUBE_TOP_LEFT', 'D') ('None', 'OTHER', 'None', 'None') 9
+('BigMario', 'RIGHT_UP_GRASS_EDGE', 'D') ('None', 'OTHER', 'None', 'None') 7
+('BigMario', 'RIGHT_UP_GRASS_EDGE', 'D') ('VelChange', 'A', 'None', 'vy') 4
+('TUBE_TOP_RIGHT', 'BigMario', 'U') ('None', 'OTHER', 'None', 'None') 7
+('TUBE_TOP_RIGHT', 'BigMario', 'U') ('VelChange', 'B', 'None', 'vy') 4
+('Goomba', 'Fireball', 'L') ('append', 'B', 'None', 'None') 5
+('Goomba', 'Fireball', 'L') ('None', 'OTHER', 'None', 'None') 13
+('Goomba', 'Fireball', 'L') ('VelChange', 'A', 'None', 'vx') 5
+('Mario', 'LEFT_UP_GRASS_EDGE', 'D') ('VelChange', 'A', 'None', 'vy') 14
+('Mario', 'TUBE_TOP_RIGHT', 'D') ('None', 'OTHER', 'None', 'None') 11
+('Mario', 'TUBE_TOP_RIGHT', 'D') ('VelChange', 'A', 'None', 'vy') 5
+('Mario', 'COIN', 'D') ('Delete', 'OTHER', 'None', 'None') 10
+('TUBE_TOP_LEFT', 'BigMario', 'L') ('VelChange', 'B', 'None', 'vx') 10
+('COIN', 'BigMario', 'U') ('Delete', 'OTHER', 'None', 'None') 9
+('GROUND', 'Goomba', 'U') ('VelChange', 'B', 'None', 'vy') 13
+('BLOCK', 'Mario', 'D') ('VelChange', 'B', 'None', 'vx') 5
+('BLOCK', 'Mario', 'D') ('Change', 'A', 'SPENT', 'None') 34
+('BLOCK', 'Mario', 'D') ('VelChange', 'B', 'None', 'vy') 62
+('BLOCK', 'Mario', 'D') ('append', 'OTHER', 'None', 'None') 34
+('Mario', 'GreenKoopa', 'D') ('VelChange', 'A', 'None', 'vy') 4
+('Mario', 'GreenKoopa', 'D') ('Delete', 'B', 'None', 'None') 4
+('TUBE_SIDE_LEFT', 'Fireball', 'L') ('VelChange', 'B', 'None', 'vx') 11
+('TUBE_SIDE_LEFT', 'Fireball', 'L') ('Delete', 'B', 'None', 'None') 11
+('VelChange', 'OTHER', 'None', 'vx') OTHER 30
+('Delete', 'B', 'None', 'None') B 62
+('Change', 'A', 'SPENT', 'None') A 68
+('VelChange', 'OTHER', 'None', 'vy') OTHER 40
+('None', 'OTHER', 'None', 'None') OTHER 402
+('append', 'B', 'None', 'None') B 17
+('Change', 'B', 'SPENT', 'None') B 68
+('VelChange', 'B', 'None', 'vx') B 205
+('VelChange', 'A', 'None', 'vy') A 628
+('Delete', 'OTHER', 'None', 'None') OTHER 224
+('append', 'A', 'None', 'None') A 17
+('Delete', 'A', 'None', 'None') A 62
+('VelChange', 'B', 'None', 'vy') B 628
+('VelChange', 'A', 'None', 'vx') A 205
+('append', 'OTHER', 'None', 'None') OTHER 146
+('VelChange', 'OTHER', 'None', 'vx') VelChange 30
+('Delete', 'B', 'None', 'None') Delete 62
+('Change', 'A', 'SPENT', 'None') Change 68
+('VelChange', 'OTHER', 'None', 'vy') VelChange 40
+('None', 'OTHER', 'None', 'None') None 402
+('append', 'B', 'None', 'None') append 17
+('Change', 'B', 'SPENT', 'None') Change 68
+('VelChange', 'B', 'None', 'vx') VelChange 205
+('VelChange', 'A', 'None', 'vy') VelChange 628
+('Delete', 'OTHER', 'None', 'None') Delete 224
+('append', 'A', 'None', 'None') append 17
+('Delete', 'A', 'None', 'None') Delete 62
+('VelChange', 'B', 'None', 'vy') VelChange 628
+('VelChange', 'A', 'None', 'vx') VelChange 205
+('append', 'OTHER', 'None', 'None') append 146
+('VelChange', 'OTHER', 'None', 'vx') None 30
+('Delete', 'B', 'None', 'None') None 62
+('Change', 'A', 'SPENT', 'None') SPENT 68
+('VelChange', 'OTHER', 'None', 'vy') None 40
+('None', 'OTHER', 'None', 'None') None 402
+('append', 'B', 'None', 'None') None 17
+('Change', 'B', 'SPENT', 'None') SPENT 68
+('VelChange', 'B', 'None', 'vx') None 205
+('VelChange', 'A', 'None', 'vy') None 628
+('Delete', 'OTHER', 'None', 'None') None 224
+('append', 'A', 'None', 'None') None 17
+('Delete', 'A', 'None', 'None') None 62
+('VelChange', 'B', 'None', 'vy') None 628
+('VelChange', 'A', 'None', 'vx') None 205
+('append', 'OTHER', 'None', 'None') None 146
+('VelChange', 'OTHER', 'None', 'vx') vx 30
+('Delete', 'B', 'None', 'None') None 62
+('Change', 'A', 'SPENT', 'None') None 68
+('VelChange', 'OTHER', 'None', 'vy') vy 40
+('None', 'OTHER', 'None', 'None') None 402
+('append', 'B', 'None', 'None') None 17
+('Change', 'B', 'SPENT', 'None') None 68
+('VelChange', 'B', 'None', 'vx') vx 205
+('VelChange', 'A', 'None', 'vy') vy 628
+('Delete', 'OTHER', 'None', 'None') None 224
+('append', 'A', 'None', 'None') None 17
+('Delete', 'A', 'None', 'None') None 62
+('VelChange', 'B', 'None', 'vy') vy 628
+('VelChange', 'A', 'None', 'vx') vx 205
+('append', 'OTHER', 'None', 'None') None 146
+(292, 17)
+8 (17, 17)
+{3: set(['RIGHT_UP_GRASS_EDGE', 'GROUND', 'Mario', 'SPENT', 'FireMario', 'BigMario', 'TUBE_TOP_RIGHT', 'LEFT_UP_GRASS_EDGE', 'Fireball', 'BLOCK', 'Goomba']), 14: set(['RIGHT_UP_GRASS_EDGE', 'GreenKoopa', 'COIN', 'GROUND', 'Mario', 'SPENT', 'FireMario', 'BigMario', 'TUBE_TOP_RIGHT', 'LEFT_UP_GRASS_EDGE', 'TUBE_TOP_LEFT', 'ROCK', 'Fireball', 'BLOCK', 'Goomba']), 7: set(['Mario', 'BigMario'])}
+3 set(['RIGHT_UP_GRASS_EDGE', 'GROUND', 'Mario', 'SPENT', 'FireMario', 'BigMario', 'TUBE_TOP_RIGHT', 'LEFT_UP_GRASS_EDGE', 'Fireball', 'BLOCK', 'Goomba'])
+7 set(['Mario', 'BigMario'])
+14 set(['RIGHT_UP_GRASS_EDGE', 'GreenKoopa', 'COIN', 'GROUND', 'Mario', 'SPENT', 'FireMario', 'BigMario', 'TUBE_TOP_RIGHT', 'LEFT_UP_GRASS_EDGE', 'TUBE_TOP_LEFT', 'ROCK', 'Fireball', 'BLOCK', 'Goomba'])

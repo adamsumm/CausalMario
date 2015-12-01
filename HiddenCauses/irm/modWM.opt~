@@ -1,0 +1,13 @@
+; run-specific parameters for the Infinite Relational Model
+;
+--loops=2000
+--nchains=8
+--temp=2
+--mcmcflag=1
+--outroot=modWM_8
+--configfile=modWM.config
+--graphname=modWM.graph
+--initfile=
+--hypupdates=5
+--alphaupdate=1
+--alpha=8

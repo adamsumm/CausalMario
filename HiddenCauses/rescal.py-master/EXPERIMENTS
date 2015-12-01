@@ -1,0 +1,31 @@
+python relationalize.py  Mario/t_.csv 30 2 0.2
+
+{1: set(['Mario', 'BigMario']), 4: set(['Mario', 'BigMario', 'Fireball']), 6: set(['Mario', 'Fireball']), 7: set(['BigMario']), 9: set(['FireMario', 'Fireball']), 10: set(['Mario', 'BigMario']), 12: set(['FireMario', 'Fireball']), 13: set(['FireMario', 'Fireball']), 14: set(['Mario', 'BigMario']), 16: set(['FireMario', 'BigMario', 'Fireball', 'Goomba', 'Mario']), 18: set(['Goomba']), 19: set(['FireMario', 'Goomba']), 20: set(['Goomba']), 21: set(['Goomba']), 23: set(['FireMario', 'BigMario', 'Goomba']), 24: set(['BigMario', 'Fireball']), 25: set(['FireMario']), 27: set(['BigMario', 'Fireball']), 28: set(['Fireball']), 29: set(['HILL_TOP_RIGHT', 'RIGHT_GRASS_EDGE', 'BulletBill', 'Spiky', 'TUBE_SIDE_RIGHT', 'SPENT', 'Bush', 'TUBE_TOP_RIGHT', 'null', 'HILL_TOP_RIGHT_IN', 'BLOCK', 'Shell', 'Mushroom', '1', '0', '3', 'TUBE_TOP_LEFT', 'LEFT_UP_GRASS_EDGE', '4', '7', '6', '9', '8', 'HILL_TOP_LEFT_IN', 'RIGHT_UP_GRASS_EDGE', 'HILL_TOP', 'HILL_FILL', 'TUBE_SIDE_LEFT', 'ROCK', 'HILL_LEFT', 'HILL_RIGHT', 'QBLOCK', 'RedKoopa', '2', 'LEFT_GRASS_EDGE', 'GROUND', 'COIN', 'HILL_TOP_LEFT', 'GreenKoopa'])}
+
+ython relationalize.py  Mario/t_.csv 30 10 0.2
+{1: set(['FireMario', 'BigMario', 'Mario']), 3: set(['FireMario', 'Fireball', 'Mario']), 6: set(['Mario', 'Fireball', 'Goomba']), 7: set(['FireMario', 'Goomba']), 8: set(['FireMario', 'Goomba', 'Mario']), 9: set(['FireMario', 'Fireball']), 10: set(['HILL_FILL', 'Goomba']), 11: set(['FireMario', 'Fireball', 'Goomba']), 12: set(['Mario']), 14: set(['Fireball']), 16: set(['FireMario', 'Fireball', 'Mario']), 17: set(['HILL_TOP', 'HILL_FILL', 'Mario', 'HILL_LEFT', 'HILL_RIGHT', 'FireMario', 'BigMario', 'Fireball', 'Goomba']), 18: set(['FireMario', 'BigMario']), 19: set(['Mario', 'BigMario']), 20: set(['HILL_LEFT', 'HILL_FILL', 'Goomba']), 21: set(['FireMario', 'BigMario', 'Mario']), 23: set(['FireMario', 'Mario']), 24: set(['Mario']), 25: set(['Mario', 'Fireball']), 26: set(['BigMario']), 28: set(['Fireball']), 29: set(['HILL_TOP_RIGHT', 'RIGHT_GRASS_EDGE', 'BulletBill', 'Spiky', 'TUBE_SIDE_RIGHT', 'Bush', 'TUBE_TOP_RIGHT', 'null', 'HILL_TOP_RIGHT_IN', 'BLOCK', 'Shell', 'Mushroom', '1', '0', '3', 'TUBE_TOP_LEFT', 'LEFT_UP_GRASS_EDGE', '4', '7', '6', '9', '8', 'HILL_TOP_LEFT_IN', 'RIGHT_UP_GRASS_EDGE', 'TUBE_SIDE_LEFT', 'ROCK', 'QBLOCK', 'RedKoopa', '2', 'LEFT_GRASS_EDGE', 'GROUND', 'COIN', 'HILL_TOP_LEFT', 'GreenKoopa'])}
+
+
+python relationalize.py  Mario/t_.csv 20 20 85 > temp
+
+
+0 set(['HILL_TOP_RIGHT', 'Fireball', 'RIGHT_GRASS_EDGE', 'Spiky', 'FireMario', 'BigMario', 'TUBE_TOP_RIGHT', 'null', 'BLOCK', 'Shell', 'Mushroom', '0', 'Mario', '3', '2', 'LEFT_UP_GRASS_EDGE', '4', '7', '6', '8', 'Goomba', 'RIGHT_UP_GRASS_EDGE', 'HILL_TOP', 'HILL_FILL', 'ROCK', 'HILL_LEFT', 'HILL_RIGHT', 'QBLOCK', 'LEFT_GRASS_EDGE', 'GROUND', 'COIN', 'HILL_TOP_LEFT', 'GreenKoopa'])
+1 set(['BLOCK'])
+2 set(['HILL_TOP_RIGHT', 'SPENT', 'FireMario', 'BigMario', 'TUBE_TOP_RIGHT', 'null', 'BLOCK', 'Shell', 'Mushroom', 'Mario', 'TUBE_TOP_LEFT', 'LEFT_UP_GRASS_EDGE', 'ROCK', 'GROUND', 'RIGHT_UP_GRASS_EDGE', 'HILL_TOP', 'HILL_FILL', 'TUBE_SIDE_LEFT', 'HILL_LEFT', 'QBLOCK', 'LEFT_GRASS_EDGE', 'Goomba', 'COIN', 'GreenKoopa'])
+3 set(['Mushroom', 'Mario', 'QBLOCK', 'FireMario', 'BigMario', 'null'])
+4 set(['HILL_FILL', 'COIN', 'HILL_TOP', 'Mushroom', 'Mario', 'TUBE_SIDE_LEFT', 'SPENT', 'HILL_LEFT', 'FireMario', 'BigMario', 'TUBE_TOP_RIGHT', 'LEFT_UP_GRASS_EDGE', 'TUBE_TOP_LEFT', 'QBLOCK', 'Goomba', 'BLOCK', 'GROUND'])
+5 set(['RIGHT_UP_GRASS_EDGE', 'GreenKoopa', 'Shell', 'Mushroom', 'Mario', 'TUBE_SIDE_LEFT', 'COIN', 'QBLOCK', 'FireMario', 'BigMario', 'TUBE_TOP_RIGHT', 'LEFT_UP_GRASS_EDGE', 'ROCK', 'null', 'BLOCK'])
+6 set(['Mushroom', 'Mario', 'QBLOCK', 'FireMario', 'BigMario', 'null'])
+7 set(['TUBE_TOP_RIGHT', 'HILL_TOP', 'TUBE_SIDE_LEFT', 'SPENT', 'HILL_LEFT', 'FireMario', 'BigMario', 'TUBE_TOP_LEFT', 'Fireball', 'BLOCK'])
+8 set(['Fireball', 'RIGHT_GRASS_EDGE', 'FireMario', 'BigMario', 'TUBE_TOP_RIGHT', 'null', 'BLOCK', 'Shell', 'Mushroom', '0', 'Mario', 'TUBE_TOP_LEFT', 'LEFT_UP_GRASS_EDGE', 'ROCK', 'Goomba', 'RIGHT_UP_GRASS_EDGE', 'HILL_TOP', 'HILL_FILL', 'TUBE_SIDE_LEFT', 'HILL_LEFT', 'HILL_RIGHT', 'QBLOCK', 'LEFT_GRASS_EDGE', 'GROUND', 'COIN', 'GreenKoopa'])
+9 set(['HILL_TOP_RIGHT', 'Fireball', 'Goomba', 'HILL_TOP', 'HILL_FILL', 'Spiky', 'HILL_LEFT', 'HILL_RIGHT', '0', '3', '2', '4', '7', '6', '8', 'LEFT_GRASS_EDGE', 'HILL_TOP_LEFT', 'GROUND'])
+10 set(['FireMario', 'Fireball'])
+11 set(['RIGHT_UP_GRASS_EDGE', 'Fireball', 'Goomba', 'HILL_TOP', 'Mushroom', 'Mario', 'HILL_FILL', 'COIN', 'SPENT', 'HILL_LEFT', 'FireMario', 'BigMario', 'TUBE_TOP_LEFT', 'LEFT_UP_GRASS_EDGE', 'ROCK', 'QBLOCK', 'null', 'TUBE_SIDE_LEFT', 'BLOCK', 'GROUND'])
+12 set(['RIGHT_UP_GRASS_EDGE', 'COIN', 'Goomba', 'HILL_FILL', 'Mario', 'LEFT_UP_GRASS_EDGE', 'ROCK', 'null', 'GROUND'])
+13 set(['Mushroom', 'Mario', 'QBLOCK', 'FireMario', 'BigMario', 'null'])
+14 set(['FireMario', 'BigMario', 'BLOCK'])
+15 set(['Mario', 'COIN', 'Fireball', 'HILL_FILL'])
+16 set(['Mushroom', 'Mario', 'QBLOCK', 'FireMario', 'BigMario', 'null'])
+17 set(['HILL_TOP_RIGHT', 'RIGHT_GRASS_EDGE', 'HILL_TOP', 'TUBE_SIDE_LEFT', 'Spiky', 'SPENT', 'HILL_TOP_LEFT', '2', '0', '3', 'TUBE_TOP_RIGHT', 'TUBE_TOP_LEFT', '7', '6', '8', '4'])
+18 set(['HILL_TOP_RIGHT', 'RIGHT_GRASS_EDGE', 'Spiky', 'HILL_TOP_LEFT', 'HILL_RIGHT', '0', '3', '2', '4', '7', '6', '8', 'Fireball'])
+19 set(['TUBE_SIDE_LEFT'])

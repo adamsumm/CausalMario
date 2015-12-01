@@ -1,10 +1,10 @@
 ; run-specific parameters for the Infinite Relational Model
 ;
---loops=40
+--loops=500
 --nchains=2
 --temp=0.5
 --mcmcflag=1
---outroot=marioTotal
+--outroot=marioTotalFM
 --configfile=marioTotalFullMissing.config
 --graphname=marioTotalFullMissing.graph
 --initfile=

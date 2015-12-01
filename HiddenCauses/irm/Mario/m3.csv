@@ -1,13 +1,1 @@
 ObjectA,ObjectB,A2BDir,EffectType,Source,Target,VelChange
-Bush,FireMario,R,None,None,None,None
-FireMario,Bush,L,None,None,None,None
-GreenKoopa,GreenKoopa,U,None,None,None,None
-GreenKoopa,GreenKoopa,D,None,None,None,None
-RedKoopa,GreenKoopa,U,None,None,None,None
-GreenKoopa,RedKoopa,D,None,None,None,None
-Bush,Goomba,L,None,None,None,None
-Goomba,Bush,R,None,None,None,None
-GreenKoopa,RedKoopa,U,None,None,None,None
-RedKoopa,GreenKoopa,D,None,None,None,None
-RedKoopa,Goomba,L,None,None,None,None
-Goomba,RedKoopa,R,None,None,None,None

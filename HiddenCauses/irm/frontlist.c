@@ -99,12 +99,15 @@ void frontlist_remove_abslabel(frontlist fl, int absind) {
 int frontlist_add_rellabel(frontlist fl) {
   int newabs;
   if (fl->nelements == fl->nelementsmax) {
-    fprintf(stderr, "frontlist already full\n"); exit(1); 
+    fprintf(stderr, "frontlist already full\n");
+    return fl->nelements-1;
   }
+  else {
   newabs = fl->absorder[fl->nelements];
   fl->invabsorder[newabs] = fl->nelements;
   fl->nelements++;
-  return( fl->nelements - 1 ); 
+  return( fl->nelements - 1 );
+  }
 }
 
 /* remove rellabel from frontlist*/
